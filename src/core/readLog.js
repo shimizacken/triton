@@ -1,6 +1,6 @@
-const fs = require("fs");
+import fs from "fs";
 
-const readLog = (logFile: string): Promise<any[]> => {
+export const readLog = (logFile) => {
   return new Promise((resolve, reject) => {
     fs.readFile(logFile, "utf8", (err, contents) => {
       if (err) {
@@ -19,7 +19,7 @@ const readLog = (logFile: string): Promise<any[]> => {
 };
 
 const results = readLog(
-  "/Users/shimiz/Documents/projects/log-reader/src/aquila-2021-05-20T12-30-31.659Z.log"
+  "/Users/shimiz/Documents/projects/log-reader/src/logs/aquila-2021-05-20T12-30-31.659Z.log"
 );
 
 const filterPreset = [
@@ -65,3 +65,5 @@ results.then((r) => {
 
   console.log("🚀 ~ ", filtered);
 });
+
+// module.exports = readLog;
