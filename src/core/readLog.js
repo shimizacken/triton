@@ -31,7 +31,8 @@ const Colors = {
 
 export const readLog = (logFile) => {
   if (!logFile) {
-    return;
+    logFile =
+      "/Users/shimiz/Documents/projects/log-reader/src/logs/pexip-2021-05-25T06-23-49.542Z.log";
   }
 
   return new Promise((resolve, reject) => {
@@ -60,7 +61,7 @@ console.log("Enter log file path");
 stdin.addListener("data", function (input) {
   const value = input.toString().trim();
 
-  const results = readLog("src/logs/pexip-2021-05-25T06-23-49.542Z.log"); //readLog(`${value}`);
+  const results = readLog(`${value}`);
 
   results.then((result) => {
     const topic = result
@@ -110,7 +111,7 @@ stdin.addListener("data", function (input) {
       console.log(Colors.FgGreen, `${log.time} | ${toTime(log.time)}`);
       console.log(Colors.FgCyan, `name: ${log.name}`);
 
-      log.msg ? console.log(Colors.Reset, `message: ${log.msg}`) : "";
+      log.msg ? console.log(Colors.FgYellow, `message: ${log.msg}`) : "";
 
       log.isTrusted
         ? console.log(Colors.Reset, `isTrusted: ${log.isTrusted}`)
