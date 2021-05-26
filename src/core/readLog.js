@@ -67,7 +67,7 @@ stdin.addListener("data", function (input) {
     const topicId = result?.find((log) => log?.payload?.type === "member")
       ?.payload?.topic;
 
-    const topic = result
+    const topicLogs = result
       .filter((message) => {
         if (message.event?.topic && message.event?.topic !== topicId) {
           return undefined;
@@ -79,7 +79,7 @@ stdin.addListener("data", function (input) {
 
     console.log(Colors.FgRed, "Log summary:\n");
 
-    const names = topic
+    const names = topicLogs
       .map((obj) => {
         if (obj.name) {
           return obj.name;
@@ -89,7 +89,7 @@ stdin.addListener("data", function (input) {
 
     console.log(Colors.FgCyan, "log names", [...new Set(names)]);
 
-    const lighthouseEvents = topic
+    const lighthouseEvents = topicLogs
       .map((obj) => {
         if (obj.event?.type) {
           return obj.event.type;
@@ -107,8 +107,8 @@ stdin.addListener("data", function (input) {
 
     console.log(Colors.FgRed, "Log:\n");
 
-    topic.forEach((log) => {
-      let previousLighthouseEvent;
+    topicLogs.forEach((log) => {
+      const mediaEvents = {};
 
       console.log(Colors.FgGreen, `${log.time} | ${toTime(log.time)}`);
       console.log(Colors.FgCyan, `name: ${log.name}`);
@@ -133,41 +133,41 @@ stdin.addListener("data", function (input) {
       if (log?.name === "lighthouse") {
       }
 
-      const nextLighthouseEvent =
+      const nextMediaEvent =
         log?.name === "lighthouse" ? log.event || log.payload : undefined;
 
-      if (nextLighthouseEvent) {
-        console.log(Colors.FgYellow, `type: ${nextLighthouseEvent.type}`);
-        nextLighthouseEvent.at
-          ? console.log(Colors.FgGreen, `at: ${nextLighthouseEvent.at}`)
+      if (nextMediaEvent) {
+        console.log(Colors.FgYellow, `type: ${nextMediaEvent.type}`);
+        nextMediaEvent.at
+          ? console.log(Colors.FgGreen, `at: ${nextMediaEvent.at}`)
           : "";
 
-        if (nextLighthouseEvent?.type === "media") {
-          console.log(Colors.FgCyan, `audio: ${nextLighthouseEvent.audio}`);
+        if (nextMediaEvent?.type === "media") {
+          console.log(Colors.FgCyan, `audio: ${nextMediaEvent.audio}`);
         }
 
-        if (nextLighthouseEvent?.type === "member") {
+        if (nextMediaEvent?.type === "member") {
           console.log(
             Colors.FgCyan,
-            `can: ${JSON.stringify(nextLighthouseEvent.can)}`
+            `can: ${JSON.stringify(nextMediaEvent.can)}`
           );
         }
 
-        if (nextLighthouseEvent?.at && previousLighthouseEvent?.at) {
+        if (nextMediaEvent?.at && mediaEvents[nextMediaEvent.callId]?.at) {
           if (
-            new Date(nextLighthouseEvent.at).valueOf() <
-            new Date(previousLighthouseEvent.at).valueOf()
+            new Date(nextMediaEvent.at).valueOf() <
+            new Date(mediaEvents[nextMediaEvent.callId].at).valueOf()
           ) {
             console.log(
               Colors.FgRed,
               "out of order! 🤪",
-              `previous ${previousLighthouseEvent?.at}`,
-              `next ${nextLighthouseEvent?.at}`
+              `previous ${mediaEvents[nextMediaEvent.callId]?.at}`,
+              `next ${nextMediaEvent?.at}`
             );
           }
         }
 
-        previousLighthouseEvent = nextLighthouseEvent;
+        mediaEvents[nextMediaEvent.callId] = nextMediaEvent;
       }
 
       console.log("");
