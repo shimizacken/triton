@@ -119,7 +119,7 @@ stdin.addListener("data", function (input) {
 
     console.log(Colors.Reset);
 
-    console.log(Colors.FgRed, "Log:\n");
+    console.log(Colors.FgYellow, `${Colors.Underscore}Log:${Colors.Reset}\n`);
 
     topicLogs.forEach((log) => {
       const mediaEvents = {};
