@@ -35,6 +35,8 @@ export const main = () => {
     const results = readLog(`${value}`);
 
     results.then((result) => {
+      const mediaEvents = {};
+
       const topicId = result?.find((log) => log?.payload?.type === "member")
         ?.payload?.topic;
 
@@ -97,8 +99,6 @@ export const main = () => {
         ANSIFontStyling.FgYellow,
         `${ANSIFontStyling.Underscore}Log:${ANSIFontStyling.Reset}\n`
       );
-
-      const mediaEvents = {};
 
       topicLogs.forEach((log) => {
         console.log(
