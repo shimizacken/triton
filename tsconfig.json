@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "noEmit": false,
+    "downlevelIteration": true,
+    "module": "CommonJS",
+    "target": "es2020",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["@types", "./src/**/*.ts"],
+  "exclude": ["**/node_modules/*", "**/dist/*"]
+}

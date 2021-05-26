@@ -1,6 +1,7 @@
-import fs from "fs";
-import { Colors } from "../enums.js";
+import * as fs from "fs";
+import { ANSIFontStyling } from "../enums.js";
 import type { LighthouseEvent } from "../types";
+import { toTime } from "../utils/utils.js";
 
 export const readLog = (logFile?: string): Promise<LighthouseEvent[]> => {
   if (!logFile) {
@@ -14,7 +15,7 @@ export const readLog = (logFile?: string): Promise<LighthouseEvent[]> => {
         reject(err);
       }
 
-      const split = contents?.split(/\r?\n/);
+      const split = contents?.toString()?.split(/\r?\n/);
 
       const result = split?.map((line) => {
         return JSON.parse(line);
@@ -24,8 +25,6 @@ export const readLog = (logFile?: string): Promise<LighthouseEvent[]> => {
     });
   });
 };
-
-const toTime = (time: number) => new Date(time).toISOString();
 
 const stdin = process.openStdin();
 
@@ -51,10 +50,10 @@ stdin.addListener("data", function (input) {
       .filter(Boolean);
 
     console.log(
-      `${Colors.FgYellow}${Colors.Underscore}Log summary:${Colors.Reset}\n`
+      `${ANSIFontStyling.FgYellow}${ANSIFontStyling.Underscore}Log summary:${ANSIFontStyling.Reset}\n`
     );
 
-    console.log(`${Colors.FgCyan} topic: ${topicId}\n`);
+    console.log(`${ANSIFontStyling.FgCyan} topic: ${topicId}\n`);
 
     const names = topicLogs
       .map((obj) => {
@@ -65,12 +64,12 @@ stdin.addListener("data", function (input) {
       .filter(Boolean);
 
     console.log(
-      Colors.FgYellow,
-      `${Colors.Underscore}Log names:${Colors.Reset}`
+      ANSIFontStyling.FgYellow,
+      `${ANSIFontStyling.Underscore}Log names:${ANSIFontStyling.Reset}`
     );
 
-    [...new Set(names)].forEach((name) =>
-      console.log(`${Colors.FgCyan} ${name}`)
+    new Set(names).forEach((name) =>
+      console.log(`${ANSIFontStyling.FgCyan} ${name}`)
     );
 
     const lighthouseEvents = topicLogs
@@ -81,29 +80,37 @@ stdin.addListener("data", function (input) {
       })
       .filter(Boolean);
 
-    console.log(Colors.Reset);
+    console.log(ANSIFontStyling.Reset);
 
     console.log(
-      Colors.FgYellow,
-      `${Colors.Underscore}lighthouse events:${Colors.Reset}`
+      ANSIFontStyling.FgYellow,
+      `${ANSIFontStyling.Underscore}lighthouse events:${ANSIFontStyling.Reset}`
     );
 
-    console.log(Colors.FgCyan, [...new Set(lighthouseEvents)].join(", "));
+    console.log(
+      ANSIFontStyling.FgCyan,
+      Array.from(new Set(lighthouseEvents)).join(", ")
+    );
 
-    console.log(Colors.Reset);
+    console.log(ANSIFontStyling.Reset);
 
-    console.log(Colors.FgYellow, `${Colors.Underscore}Log:${Colors.Reset}\n`);
+    console.log(
+      ANSIFontStyling.FgYellow,
+      `${ANSIFontStyling.Underscore}Log:${ANSIFontStyling.Reset}\n`
+    );
 
     const mediaEvents = {};
 
     topicLogs.forEach((log) => {
-      console.log(Colors.FgGreen, `${log.time} | ${toTime(log.time)}`);
-      console.log(Colors.FgCyan, `name: ${log.name}`);
+      console.log(ANSIFontStyling.FgGreen, `${log.time} | ${toTime(log.time)}`);
+      console.log(ANSIFontStyling.FgCyan, `name: ${log.name}`);
 
-      log.msg ? console.log(Colors.FgYellow, `message: ${log.msg}`) : "";
+      log.msg
+        ? console.log(ANSIFontStyling.FgYellow, `message: ${log.msg}`)
+        : "";
 
       log.isTrusted
-        ? console.log(Colors.Reset, `isTrusted: ${log.isTrusted}`)
+        ? console.log(ANSIFontStyling.Reset, `isTrusted: ${log.isTrusted}`)
         : "";
 
       if (log.name === "router") {
@@ -114,7 +121,7 @@ stdin.addListener("data", function (input) {
       }
 
       log.mute !== undefined
-        ? console.log(Colors.FgCyan, `mute: ${log.mute}`)
+        ? console.log(ANSIFontStyling.FgCyan, `mute: ${log.mute}`)
         : "";
 
       if (log?.name === "lighthouse") {
@@ -124,30 +131,45 @@ stdin.addListener("data", function (input) {
         log?.name === "lighthouse" && log.payload ? log.payload : undefined;
 
       if (sentMediaEvent) {
-        console.log(Colors.FgYellow, `type: ${sentMediaEvent.type}`);
+        console.log(ANSIFontStyling.FgYellow, `type: ${sentMediaEvent.type}`);
         sentMediaEvent.at
-          ? console.log(Colors.FgGreen, `at: ${sentMediaEvent.at}`)
+          ? console.log(ANSIFontStyling.FgGreen, `at: ${sentMediaEvent.at}`)
           : "";
-        console.log(Colors.FgGreen, `⬆ ${Colors.FgWhite}sent`);
+        console.log(
+          ANSIFontStyling.FgGreen,
+          `⬆ ${ANSIFontStyling.FgWhite}sent`
+        );
       }
 
       const receiveLighthouseEvent =
         log?.name === "lighthouse" && log.event ? log.event : undefined;
 
       if (receiveLighthouseEvent) {
-        console.log(Colors.FgYellow, `type: ${receiveLighthouseEvent.type}`);
-        console.log(Colors.FgRed, `⬇ ${Colors.FgWhite}received`);
+        console.log(
+          ANSIFontStyling.FgYellow,
+          `type: ${receiveLighthouseEvent.type}`
+        );
+        console.log(
+          ANSIFontStyling.FgRed,
+          `⬇ ${ANSIFontStyling.FgWhite}received`
+        );
         receiveLighthouseEvent.at
-          ? console.log(Colors.FgGreen, `at: ${receiveLighthouseEvent.at}`)
+          ? console.log(
+              ANSIFontStyling.FgGreen,
+              `at: ${receiveLighthouseEvent.at}`
+            )
           : "";
 
         if (receiveLighthouseEvent?.type === "media") {
-          console.log(Colors.FgCyan, `audio: ${receiveLighthouseEvent.audio}`);
+          console.log(
+            ANSIFontStyling.FgCyan,
+            `audio: ${receiveLighthouseEvent.audio}`
+          );
         }
 
         if (receiveLighthouseEvent?.type === "member") {
           console.log(
-            Colors.FgCyan,
+            ANSIFontStyling.FgCyan,
             `can: ${JSON.stringify(receiveLighthouseEvent.can)}`
           );
         }
@@ -161,11 +183,13 @@ stdin.addListener("data", function (input) {
             new Date(mediaEvents[receiveLighthouseEvent.callId].at).valueOf()
           ) {
             console.log(
-              Colors.FgRed,
-              `\t${Colors.Underscore}received out of order!${Colors.Reset} 🤪\n`,
-              `\t${Colors.FgWhite}previous media event at ${Colors.FgGreen}${
-                mediaEvents[receiveLighthouseEvent.callId]?.at
-              } ${Colors.FgWhite}and the next at ${Colors.FgGreen}${
+              ANSIFontStyling.FgRed,
+              `\t${ANSIFontStyling.Underscore}received out of order!${ANSIFontStyling.Reset} 🤪\n`,
+              `\t${ANSIFontStyling.FgWhite}previous media event at ${
+                ANSIFontStyling.FgGreen
+              }${mediaEvents[receiveLighthouseEvent.callId]?.at} ${
+                ANSIFontStyling.FgWhite
+              }and the next at ${ANSIFontStyling.FgGreen}${
                 receiveLighthouseEvent?.at
               }`
             );

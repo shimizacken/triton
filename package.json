@@ -5,7 +5,8 @@
   "main": "src/core/readLog.ts",
   "type": "module",
   "scripts": {
-    "start": "tsc src/core/readLog.ts && src/core/readLog.js",
+    "start": " node dist/core/readLog.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
