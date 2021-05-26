@@ -147,41 +147,56 @@ stdin.addListener("data", function (input) {
       if (log?.name === "lighthouse") {
       }
 
-      const nextMediaEvent =
-        log?.name === "lighthouse" ? log.event || log.payload : undefined;
+      const sentMediaEvent =
+        log?.name === "lighthouse" && log.payload ? log.payload : undefined;
 
-      if (nextMediaEvent) {
-        console.log(Colors.FgYellow, `type: ${nextMediaEvent.type}`);
-        nextMediaEvent.at
-          ? console.log(Colors.FgGreen, `at: ${nextMediaEvent.at}`)
+      if (sentMediaEvent) {
+        console.log(Colors.FgYellow, `type: ${sentMediaEvent.type}`);
+        sentMediaEvent.at
+          ? console.log(Colors.FgGreen, `at: ${sentMediaEvent.at}`)
+          : "";
+        console.log(Colors.FgGreen, `⬆ sent`);
+      }
+
+      const receiveLighthouseEvent =
+        log?.name === "lighthouse" && log.event ? log.event : undefined;
+
+      if (receiveLighthouseEvent) {
+        console.log(Colors.FgYellow, `type: ${receiveLighthouseEvent.type}`);
+        console.log(Colors.FgRed, `⬇ received`);
+        receiveLighthouseEvent.at
+          ? console.log(Colors.FgGreen, `at: ${receiveLighthouseEvent.at}`)
           : "";
 
-        if (nextMediaEvent?.type === "media") {
-          console.log(Colors.FgCyan, `audio: ${nextMediaEvent.audio}`);
+        if (receiveLighthouseEvent?.type === "media") {
+          console.log(Colors.FgCyan, `audio: ${receiveLighthouseEvent.audio}`);
         }
 
-        if (nextMediaEvent?.type === "member") {
+        if (receiveLighthouseEvent?.type === "member") {
           console.log(
             Colors.FgCyan,
-            `can: ${JSON.stringify(nextMediaEvent.can)}`
+            `can: ${JSON.stringify(receiveLighthouseEvent.can)}`
           );
         }
 
-        if (nextMediaEvent?.at && mediaEvents[nextMediaEvent.callId]?.at) {
+        if (
+          receiveLighthouseEvent?.at &&
+          mediaEvents[receiveLighthouseEvent.callId]?.at
+        ) {
           if (
-            new Date(nextMediaEvent.at).valueOf() <
-            new Date(mediaEvents[nextMediaEvent.callId].at).valueOf()
+            new Date(receiveLighthouseEvent.at).valueOf() <
+            new Date(mediaEvents[receiveLighthouseEvent.callId].at).valueOf()
           ) {
             console.log(
               Colors.FgRed,
               "out of order! 🤪",
-              `previous ${mediaEvents[nextMediaEvent.callId]?.at}`,
-              `next ${nextMediaEvent?.at}`
+              `previous ${mediaEvents[receiveLighthouseEvent.callId]?.at}`,
+              `next ${receiveLighthouseEvent?.at}`
             );
           }
         }
 
-        mediaEvents[nextMediaEvent.callId] = nextMediaEvent;
+        mediaEvents[receiveLighthouseEvent.callId] = receiveLighthouseEvent;
       }
 
       console.log("");
