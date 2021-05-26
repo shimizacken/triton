@@ -1,7 +1,8 @@
 import fs from "fs";
 import { Colors } from "../enums.js";
+import type { LighthouseEvent } from "../types";
 
-export const readLog = (logFile) => {
+export const readLog = (logFile?: string): Promise<LighthouseEvent[]> => {
   if (!logFile) {
     logFile =
       "/Users/shimiz/Documents/projects/log-reader/src/test/logs/pexip-2021-05-25T06-23-49.542Z.log";
@@ -24,7 +25,7 @@ export const readLog = (logFile) => {
   });
 };
 
-const toTime = (time) => new Date(time).toISOString();
+const toTime = (time: number) => new Date(time).toISOString();
 
 const stdin = process.openStdin();
 
