@@ -22,24 +22,18 @@ export const readLog = (logFile) => {
   });
 };
 
+// /Users/shimiz/Documents/projects/log-reader/src/logs/pexip-2021-05-25T06-23-49.542Z.log
+
 const toTime = (time) => new Date(time).toISOString();
 
 const stdin = process.openStdin();
 
 console.log("Enter log file path");
 
-stdin.addListener("data", function (d) {
-  // note:  d is an object, and when converted to a string it will
-  // end with a linefeed.  so we (rather crudely) account for that
-  // with toString() and then trim()
+stdin.addListener("data", function (input) {
+  const value = input.toString().trim();
 
-  const arg = d.toString().trim();
-
-  // console.log(`you entered: ${arg}`);
-
-  // /Users/shimiz/Documents/projects/log-reader/src/logs/pexip-2021-05-25T06-23-49.542Z.log
-
-  const results = readLog(`${arg}`);
+  const results = readLog(`${value}`);
 
   results.then((r) => {
     r.filter((message) => {
@@ -61,7 +55,7 @@ stdin.addListener("data", function (d) {
         t.name === "router"
           ? console.log(
               "\x1b[0m",
-              `Title: ${t.url.state.title}, Url: ${t.url.path}`
+              `Title: ${t.url?.state?.title}, Url: ${t.url?.path}`
             )
           : "";
         console.log(
