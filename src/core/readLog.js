@@ -121,9 +121,9 @@ stdin.addListener("data", function (input) {
 
     console.log(Colors.FgYellow, `${Colors.Underscore}Log:${Colors.Reset}\n`);
 
-    topicLogs.forEach((log) => {
-      const mediaEvents = {};
+    const mediaEvents = {};
 
+    topicLogs.forEach((log) => {
       console.log(Colors.FgGreen, `${log.time} | ${toTime(log.time)}`);
       console.log(Colors.FgCyan, `name: ${log.name}`);
 
@@ -155,7 +155,7 @@ stdin.addListener("data", function (input) {
         sentMediaEvent.at
           ? console.log(Colors.FgGreen, `at: ${sentMediaEvent.at}`)
           : "";
-        console.log(Colors.FgGreen, `⬆ sent`);
+        console.log(Colors.FgGreen, `⬆ ${Colors.FgWhite}sent`);
       }
 
       const receiveLighthouseEvent =
@@ -163,7 +163,7 @@ stdin.addListener("data", function (input) {
 
       if (receiveLighthouseEvent) {
         console.log(Colors.FgYellow, `type: ${receiveLighthouseEvent.type}`);
-        console.log(Colors.FgRed, `⬇ received`);
+        console.log(Colors.FgRed, `⬇ ${Colors.FgWhite}received`);
         receiveLighthouseEvent.at
           ? console.log(Colors.FgGreen, `at: ${receiveLighthouseEvent.at}`)
           : "";
@@ -189,14 +189,19 @@ stdin.addListener("data", function (input) {
           ) {
             console.log(
               Colors.FgRed,
-              "out of order! 🤪",
-              `previous ${mediaEvents[receiveLighthouseEvent.callId]?.at}`,
-              `next ${receiveLighthouseEvent?.at}`
+              `\t${Colors.Underscore}received out of order!${Colors.Reset} 🤪\n`,
+              `\t${Colors.FgWhite}previous media event at ${Colors.FgGreen}${
+                mediaEvents[receiveLighthouseEvent.callId]?.at
+              } ${Colors.FgWhite}and the next at ${Colors.FgGreen}${
+                receiveLighthouseEvent?.at
+              }`
             );
           }
         }
 
-        mediaEvents[receiveLighthouseEvent.callId] = receiveLighthouseEvent;
+        if (receiveLighthouseEvent.type === "media") {
+          mediaEvents[receiveLighthouseEvent.callId] = receiveLighthouseEvent;
+        }
       }
 
       console.log("");
