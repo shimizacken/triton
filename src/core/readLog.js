@@ -77,7 +77,11 @@ stdin.addListener("data", function (input) {
       })
       .filter(Boolean);
 
-    console.log(Colors.FgRed, "Log summary:\n");
+    console.log(
+      `${Colors.FgYellow}${Colors.Underscore}Log summary:${Colors.Reset}\n`
+    );
+
+    console.log(`${Colors.FgCyan} topic: ${topicId}\n`);
 
     const names = topicLogs
       .map((obj) => {
@@ -87,7 +91,14 @@ stdin.addListener("data", function (input) {
       })
       .filter(Boolean);
 
-    console.log(Colors.FgCyan, "log names", [...new Set(names)]);
+    console.log(
+      Colors.FgYellow,
+      `${Colors.Underscore}Log names:${Colors.Reset}`
+    );
+
+    [...new Set(names)].forEach((name) =>
+      console.log(`${Colors.FgCyan} ${name}`)
+    );
 
     const lighthouseEvents = topicLogs
       .map((obj) => {
@@ -97,13 +108,16 @@ stdin.addListener("data", function (input) {
       })
       .filter(Boolean);
 
-    console.log(Colors.Reset, "");
+    console.log(Colors.Reset);
 
-    console.log(Colors.FgCyan, "lighthouse events", [
-      ...new Set(lighthouseEvents),
-    ]);
+    console.log(
+      Colors.FgYellow,
+      `${Colors.Underscore}lighthouse events:${Colors.Reset}`
+    );
 
-    console.log(Colors.Reset, "");
+    console.log(Colors.FgCyan, [...new Set(lighthouseEvents)].join(" "));
+
+    console.log(Colors.Reset);
 
     console.log(Colors.FgRed, "Log:\n");
 
