@@ -4,10 +4,7 @@
     "noEmit": false,
     "downlevelIteration": true,
     "module": "CommonJS",
-    "target": "es2020",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "target": "ESNext"
   },
   "include": ["@types", "./src/**/*.ts"],
   "exclude": ["**/node_modules/*", "**/dist/*"]

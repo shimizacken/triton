@@ -2,10 +2,9 @@
   "name": "log-reader",
   "version": "1.0.0",
   "description": "",
-  "main": "src/core/readLog.ts",
-  "type": "module",
+  "main": "src/index.ts",
   "scripts": {
-    "start": " node dist/core/readLog.js",
+    "start": "tsc && node dist/core/readLog.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
