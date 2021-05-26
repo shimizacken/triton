@@ -115,7 +115,7 @@ stdin.addListener("data", function (input) {
       `${Colors.Underscore}lighthouse events:${Colors.Reset}`
     );
 
-    console.log(Colors.FgCyan, [...new Set(lighthouseEvents)].join(" "));
+    console.log(Colors.FgCyan, [...new Set(lighthouseEvents)].join(", "));
 
     console.log(Colors.Reset);
 
