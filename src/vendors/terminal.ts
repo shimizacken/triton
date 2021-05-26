@@ -10,11 +10,16 @@ const consoleReader = readline.createInterface({
 });
 
 export const initTerminal = (state: State) => {
-  consoleReader.question(`what is the file path? `, (input) => {
+  console.log(
+    `${ANSIFontStyling.BgMagenta}\n Welcome to ] pexip [ log parser ${ANSIFontStyling.Reset}\n`
+  );
+
+  consoleReader.question(` Path to log file? `, (input) => {
     state.path = input;
+    console.log("");
 
     consoleReader.question(
-      `preset? 'All' (enter) | 'Mute' | 'Media' | 'Token': `,
+      ` Filter by (can combine with '|')? 'show all' (enter) | 'mute' | 'media' | 'token': `,
       (_preset) => {
         const value = state.path?.toString().trim();
 
