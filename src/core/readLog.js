@@ -1,4 +1,33 @@
 import fs from "fs";
+// import { Colors } from "../enums";
+
+const Colors = {
+  Reset: "\x1b[0m",
+  Bright: "\x1b[1m",
+  Dim: "\x1b[2m",
+  Underscore: "\x1b[4m",
+  Blink: "\x1b[5m",
+  Reverse: "\x1b[7m",
+  Hidden: "\x1b[8m",
+
+  FgBlack: "\x1b[30m",
+  FgRed: "\x1b[31m",
+  FgGreen: "\x1b[32m",
+  FgYellow: "\x1b[33m",
+  FgBlue: "\x1b[34m",
+  FgMagenta: "\x1b[35m",
+  FgCyan: "\x1b[36m",
+  FgWhite: "\x1b[37m",
+
+  BgBlack: "\x1b[40m",
+  BgRed: "\x1b[41m",
+  BgGreen: "\x1b[42m",
+  BgYellow: "\x1b[43m",
+  BgBlue: "\x1b[44m",
+  BgMagenta: "\x1b[45m",
+  BgCyan: "\x1b[46m",
+  BgWhite: "\x1b[47m",
+};
 
 export const readLog = (logFile) => {
   if (!logFile) {
@@ -33,7 +62,7 @@ console.log("Enter log file path");
 stdin.addListener("data", function (input) {
   const value = input.toString().trim();
 
-  const results = readLog(`${value}`);
+  const results = readLog("src/logs/pexip-2021-05-25T06-23-49.542Z.log"); //readLog(`${value}`);
 
   results.then((r) => {
     r.filter((message) => {
@@ -47,26 +76,40 @@ stdin.addListener("data", function (input) {
       return message;
     })
       .filter(Boolean)
-      .forEach((t) => {
-        console.log("\x1b[33m", `${t.time} | ${toTime(t.time)}`);
-        console.log("\x1b[36m", `Name: ${t.name}`);
-        t.msg ? console.log("\x1b[0m", `Message: ${t.msg}`) : "";
-        t.isTrusted ? console.log("\x1b[0m", `isTrusted: ${t.isTrusted}`) : "";
-        t.name === "router"
-          ? console.log(
-              "\x1b[0m",
-              `Title: ${t.url?.state?.title}, Url: ${t.url?.path}`
-            )
+      .forEach((log) => {
+        console.log(Colors.FgGreen, `${log.time} | ${toTime(log.time)}`);
+        console.log(Colors.FgCyan, `name: ${log.name}`);
+
+        log.msg ? console.log(Colors.Reset, `message: ${log.msg}`) : "";
+
+        log.isTrusted
+          ? console.log(Colors.Reset, `isTrusted: ${log.isTrusted}`)
           : "";
-        console.log(
-          "\x1b[0m",
-          t.mute !== undefined ? ` Mute: ${t.mute}` : "",
-          t.event?.type ? `\nType: ${t.event.type}\n` : "",
-          t.event?.type === "media" ? `Audio: ${t.event.audio}` : "",
-          t.payload?.type === "member"
-            ? `Can ${JSON.stringify(t.payload.can)}`
-            : ""
-        );
+
+        if (log.name === "router") {
+          console.log(
+            "\x1b[0m",
+            `title: ${log.url?.state?.title}, url: ${log.url?.path}`
+          );
+        }
+
+        log.mute !== undefined
+          ? console.log(Colors.FgCyan, `mute: ${log.mute}`)
+          : "";
+
+        if (log.event?.type) {
+          console.log(Colors.FgYellow, `type: ${log.event.type}`);
+
+          if (log.event?.type === "media") {
+            console.log(Colors.FgCyan, `audio: ${log.event.audio}`);
+          }
+
+          if (log.event?.type === "member") {
+            console.log(Colors.FgCyan, `can: ${JSON.stringify(log.event.can)}`);
+          }
+        }
+
+        console.log("");
       });
   });
 });
