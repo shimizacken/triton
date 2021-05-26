@@ -20,3 +20,7 @@ export interface LogEntry extends LogEntryCore {
   payload?: lighthouseEvent;
   event?: lighthouseEvent;
 }
+
+export interface State {
+  path: string;
+}

@@ -1,18 +1,19 @@
 import * as readline from "readline";
 import { readLog } from "../core/readLog.js";
 import { ANSIFontStyling } from "../enums.js";
+import { State } from "../types.js";
 import { toTime } from "../utils/utils.js";
 
-const rl = readline.createInterface({
+const consoleReader = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-export const initTerminal = (state) => {
-  rl.question(`what is the file path? `, (input) => {
+export const initTerminal = (state: State) => {
+  consoleReader.question(`what is the file path? `, (input) => {
     state.path = input;
 
-    rl.question(
+    consoleReader.question(
       `preset? 'All' (enter) | 'Mute' | 'Media' | 'Token': `,
       (_preset) => {
         const value = state.path?.toString().trim();
@@ -205,17 +206,17 @@ export const initTerminal = (state) => {
             console.log(ANSIFontStyling.Reset);
           });
 
-          rl.question(`Exit (x) | Export (e): `, (input) => {
+          consoleReader.question(`Exit (x) | Export (e): `, (input) => {
             if (input?.toString() === "e") {
               // TODO: export content to file.
             }
 
             if (input?.toString() === "x") {
-              rl.close();
+              consoleReader.close();
             }
           });
 
-          rl.on("close", () => {
+          consoleReader.on("close", () => {
             console.log("👋");
             process.exit(0);
           });
