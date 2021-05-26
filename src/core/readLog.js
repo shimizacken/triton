@@ -28,7 +28,7 @@ const toTime = (time) => new Date(time).toISOString();
 
 const stdin = process.openStdin();
 
-console.log("Enter log file path");
+console.log("Enter log file path: ");
 
 stdin.addListener("data", function (input) {
   const value = input.toString().trim();
