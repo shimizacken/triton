@@ -2,15 +2,18 @@
   "name": "log-reader",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.ts",
+  "main": "src/core/readLog.js",
   "type": "module",
   "scripts": {
-    "start": "electron . -- --input-type=module",
+    "start": "node src/core/readLog.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "12.0.9"
+  },
+  "dependencies": {
+    "yargs": "^17.0.1"
   }
 }
