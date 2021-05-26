@@ -51,8 +51,6 @@ export const readLog = (logFile) => {
   });
 };
 
-// /Users/shimiz/Documents/projects/log-reader/src/logs/pexip-2021-05-25T06-23-49.542Z.log
-
 const toTime = (time) => new Date(time).toISOString();
 
 const stdin = process.openStdin();
