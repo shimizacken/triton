@@ -10,6 +10,8 @@ export type AppName =
 
 export type LighthouseEventType = "media" | "member" | "stage" | "updateCall";
 
+export type Filter = "mute" | "token";
+
 export interface LogEntryCore {
   name: AppName;
   time: number;
