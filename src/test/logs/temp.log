@@ -1,0 +1,4430 @@
+[2021-05-20 11:38:03.330 +0000] INFO (aquila): Jasså? Døkk sit og glor
+    buildHash: "33d95e8041728708ac06a6f1371d591b12deaac3"
+    config: {
+      "lighthouseHost": "lighthouse.pexip.io",
+      "sentry": {
+        "dsn": "https://e9a9d17dd70d47aa85ebebe030d0ef16@o490170.ingest.sentry.io/5628048",
+        "environment": "production"
+      }
+    }
+    ua: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+[2021-05-20 11:38:03.375 +0000] DEBUG (service-auth): Access token expired. Refreshing
+    exp: 1621503614
+[2021-05-20 11:38:03.378 +0000] DEBUG (aquila): DevicesFound/Lost emitted
+    module: "media"
+    type: "devices:found"
+    authorizedDevices: [
+      {
+        "deviceId": "default",
+        "kind": "audioinput",
+        "label": "Default - Microphone (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "0462fd431b04f9b5eeb4517768664a9ced4f7c2dd6e80893b11b3d3a3dece13f",
+        "kind": "audioinput",
+        "label": "Microphone (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "8ea96a15589ef5e27718fdddceffb595d12ca111dfb2da00b4686429cdfdf328",
+        "kind": "audioinput",
+        "label": "Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "fb506093e76995f4acbf5846dda4949f5aba2fecbd45ebebdf6ecff16b55210a",
+        "kind": "videoinput",
+        "label": "Integrated Webcam (0c45:671d)",
+        "groupId": "637cff707de92fa7fdd4a7522911698f292c917e5bd9c56ba00b41cb3a041a0b"
+      },
+      {
+        "deviceId": "default",
+        "kind": "audiooutput",
+        "label": "Default - Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "communications",
+        "kind": "audiooutput",
+        "label": "Communications - Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "801dc1d87eba184bf6c596a5ba8571846e450f37f527aa7938ece0aa95efa2be",
+        "kind": "audiooutput",
+        "label": "Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      }
+    ]
+    devices: [
+      {
+        "deviceId": "default",
+        "kind": "audioinput",
+        "label": "Default - Microphone (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "0462fd431b04f9b5eeb4517768664a9ced4f7c2dd6e80893b11b3d3a3dece13f",
+        "kind": "audioinput",
+        "label": "Microphone (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "8ea96a15589ef5e27718fdddceffb595d12ca111dfb2da00b4686429cdfdf328",
+        "kind": "audioinput",
+        "label": "Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "fb506093e76995f4acbf5846dda4949f5aba2fecbd45ebebdf6ecff16b55210a",
+        "kind": "videoinput",
+        "label": "Integrated Webcam (0c45:671d)",
+        "groupId": "637cff707de92fa7fdd4a7522911698f292c917e5bd9c56ba00b41cb3a041a0b"
+      },
+      {
+        "deviceId": "default",
+        "kind": "audiooutput",
+        "label": "Default - Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "communications",
+        "kind": "audiooutput",
+        "label": "Communications - Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "801dc1d87eba184bf6c596a5ba8571846e450f37f527aa7938ece0aa95efa2be",
+        "kind": "audiooutput",
+        "label": "Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      }
+    ]
+[2021-05-20 11:38:03.449 +0000] DEBUG (router): load 
+    url: {
+      "protocol": "https",
+      "host": "aquila.pexip.io",
+      "path": "/token/aa66957870777d2c4c3024ee3a4693a5",
+      "query": "",
+      "fragment": "",
+      "state": {
+        "title": "@pexip/aquila"
+      },
+      "toOrigin": "[Function i]",
+      "isInternal": "[Function s]",
+      "isExternal": "[Function isExternal]",
+      "toString": "[Function toString]",
+      "toInternalHref": "[Function toInternalHref]"
+    }
+[2021-05-20 11:38:03.449 +0000] WARN (signal): Emitting router:urlChanged without any observer! This may be a mistake.
+    signal: "router:urlChanged"
+    subject: {
+      "protocol": "https",
+      "host": "aquila.pexip.io",
+      "path": "/token/aa66957870777d2c4c3024ee3a4693a5",
+      "query": "",
+      "fragment": "",
+      "state": {
+        "title": "@pexip/aquila"
+      },
+      "toOrigin": "[Function i]",
+      "isInternal": "[Function s]",
+      "isExternal": "[Function isExternal]",
+      "toString": "[Function toString]",
+      "toInternalHref": "[Function toInternalHref]"
+    }
+[2021-05-20 11:38:04.427 +0000] DEBUG (service-auth): Access token refreshed
+[2021-05-20 11:38:04.427 +0000] DEBUG (service-auth): getToken, check if not expired first
+    exp: 1621513383
+[2021-05-20 11:38:04.427 +0000] DEBUG (service-auth): getToken, return token
+    exp: 1621513383
+[2021-05-20 11:38:04.427 +0000] INFO (lighthouse): Connecting to lighthouse using identity: s:279b0cbb-6eb1-43de-9040-ac0a5663d742
+[2021-05-20 11:38:04.428 +0000] INFO (lighthouse): establishing websocket
+[2021-05-20 11:38:04.490 +0000] INFO (lighthouse):
+    isTrusted: true
+[2021-05-20 11:38:04.490 +0000] DEBUG (lighthouse): Awaiting Session establishment
+[2021-05-20 11:38:04.491 +0000] DEBUG (service-auth): getToken, check if not expired first
+    exp: 1621513383
+[2021-05-20 11:38:04.491 +0000] DEBUG (service-auth): getToken, return token
+    exp: 1621513383
+[2021-05-20 11:38:04.491 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "displayName": "juliet@pexip.com",
+      "deviceName": "Web App",
+      "type": "session",
+      "id": "0659f6d9-686e-41b0-ad71-bad1e2e87008",
+      "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE1MTMzODMsInV1aWQiOiIyNzliMGNiYi02ZWIxLTQzZGUtOTA0MC1hYzBhNTY2M2Q3NDIiLCJ1c2VyIjoiczoyNzliMGNiYi02ZWIxLTQzZGUtOTA0MC1hYzBhNTY2M2Q3NDIifQ.RB_X1gRCKQFut14ofz6yDE2F-Yw0jyGPKgCdLAlw_B_j8L44lJ7olk7rHg5wvbYLXX1SZ9mnjMNu-axr5nh88yevuP0nsfcFVJ-G3cvxwIm5sDDb8-1dWsvm3ICB-6TCUFsCzyAOVUO0hCauFGhiLfCyS2SVgfkdTOpQ_Qu21RldnKOAE160CBnP5SPmTk54XoOsAsEUAiXNJLmf5jUwt8Pt-Q_4XOI2ZXkACUn_i3Q-LXPMp3APD9vLgiZVRP2soS1qQVlh6Ip1JfyOvKRb8E9j75U82cAERG9JGEftEnbDv8ZH8s6NGu0P5HsHgHkh_vPipwGaCobp2npoVPsxRw"
+    }
+[2021-05-20 11:38:04.491 +0000] DEBUG (lighthouse): Websocket ready for use
+[2021-05-20 11:38:04.491 +0000] DEBUG (service-auth): getToken, check if not expired first
+    exp: 1621513383
+[2021-05-20 11:38:04.491 +0000] DEBUG (service-auth): getToken, return token
+    exp: 1621513383
+[2021-05-20 11:38:04.495 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "token": "aa66957870777d2c4c3024ee3a4693a5",
+      "type": "consume",
+      "id": "3c31cecd-a54f-42dc-888d-5f30fba32276"
+    }
+[2021-05-20 11:38:04.899 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-20T11:38:00.371Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-20T11:38:00.371Z",
+      "id": "f91fae18-ed3e-41e9-85ee-5a0b0d58eaf8",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "",
+      "role": "host",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.900 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-20T11:38:00.614Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-20T11:38:00.614Z",
+      "id": "5b262007-bb29-429d-8222-4b6ba5e143f6",
+      "identity": "t:aa66957870777d2c4c3024ee3a4693a5",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "",
+      "role": "guest",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.900 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-20T11:38:00.371Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-20T11:38:00.371Z",
+      "id": "f91fae18-ed3e-41e9-85ee-5a0b0d58eaf8",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "",
+      "role": "host",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.901 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:c4021167caa5daf57123f5f5e24b14b6",
+      "actorName": "",
+      "at": "2021-05-19T08:48:01.530Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-19T08:47:56.172Z",
+      "id": "8d8397ab-62b8-4b7e-a234-b9a0755db073",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "43c51af2-7b4d-4556-b807-514224a6e05e",
+      "role": "host",
+      "secret": "",
+      "session": "12f7438c-fe13-45dd-8c2a-0de83f143e79",
+      "token": "",
+      "topic": "fa9cb3d1-2484-45ab-8738-7ceb0ffccd30",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.901 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-19T08:47:56.221Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-19T08:47:56.221Z",
+      "id": "c0f13a06-354d-47b5-bab1-4d96a469f6f5",
+      "identity": "t:c4021167caa5daf57123f5f5e24b14b6",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "",
+      "role": "guest",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "fa9cb3d1-2484-45ab-8738-7ceb0ffccd30",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.902 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-19T08:48:16.840Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-19T08:48:16.840Z",
+      "id": "4ac7f2d7-2972-4281-905d-f2475d269c26",
+      "identity": "t:a67eae95-568e-4cc5-8185-4281a0304a00",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "51b441a0-f4e8-43b7-ba99-7de0f58bf3ce",
+      "role": "guest",
+      "secret": "",
+      "session": "12f7438c-fe13-45dd-8c2a-0de83f143e79",
+      "token": "",
+      "topic": "fa9cb3d1-2484-45ab-8738-7ceb0ffccd30",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.902 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:c4021167caa5daf57123f5f5e24b14b6",
+      "actorName": "",
+      "at": "2021-05-19T08:49:30.715Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-19T08:49:30.715Z",
+      "id": "19c02477-2b1a-4079-98a1-86475acd1431",
+      "identity": "s:4a1dfe73-2721-4128-bd1f-8340e7edfca4",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "1ad16064-5ae6-4e5f-8b13-06dce914c51c",
+      "role": "guest",
+      "secret": "",
+      "session": "5d3e19ca-185c-42d8-8f23-9cac907d3aa4",
+      "token": "",
+      "topic": "fa9cb3d1-2484-45ab-8738-7ceb0ffccd30",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:c4021167caa5daf57123f5f5e24b14b6",
+      "actorName": "",
+      "at": "2021-05-19T08:48:01.530Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-19T08:47:56.172Z",
+      "id": "8d8397ab-62b8-4b7e-a234-b9a0755db073",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "43c51af2-7b4d-4556-b807-514224a6e05e",
+      "role": "host",
+      "secret": "",
+      "session": "12f7438c-fe13-45dd-8c2a-0de83f143e79",
+      "token": "",
+      "topic": "fa9cb3d1-2484-45ab-8738-7ceb0ffccd30",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:3906557b0e76857e36d82017dbe576d8",
+      "actorName": "",
+      "at": "2021-05-20T08:55:12.142Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-20T08:55:05.709Z",
+      "id": "d97e0a67-bd7b-4f56-8895-f680d3a2d57f",
+      "identity": "s:4a1dfe73-2721-4128-bd1f-8340e7edfca4",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "dfd6a9c1-5277-4179-b5a2-84aa4e9f5301",
+      "role": "host",
+      "secret": "",
+      "session": "cb51f02f-314e-4e51-857a-2c3c93453154",
+      "token": "",
+      "topic": "3bb4035b-662c-4a3b-9d78-833294fedff3",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-20T08:55:06.133Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-20T08:55:06.133Z",
+      "id": "5f0947a8-2b93-4c43-9f70-03ab9dac0f4b",
+      "identity": "t:3906557b0e76857e36d82017dbe576d8",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "",
+      "role": "guest",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "3bb4035b-662c-4a3b-9d78-833294fedff3",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:3906557b0e76857e36d82017dbe576d8",
+      "actorName": "",
+      "at": "2021-05-20T08:55:14.999Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-20T08:55:14.999Z",
+      "id": "9cc5b07e-0d9c-4d91-b2ad-f0fd4b8c0ff6",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "ba88c2d3-5876-4476-b83f-f9c41cd5f208",
+      "role": "guest",
+      "secret": "",
+      "session": "74bfb0a4-218f-47c9-8643-c3b79a0a0b5c",
+      "token": "",
+      "topic": "3bb4035b-662c-4a3b-9d78-833294fedff3",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:3906557b0e76857e36d82017dbe576d8",
+      "actorName": "",
+      "at": "2021-05-20T08:55:14.999Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-20T08:55:14.999Z",
+      "id": "9cc5b07e-0d9c-4d91-b2ad-f0fd4b8c0ff6",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "ba88c2d3-5876-4476-b83f-f9c41cd5f208",
+      "role": "guest",
+      "secret": "",
+      "session": "74bfb0a4-218f-47c9-8643-c3b79a0a0b5c",
+      "token": "",
+      "topic": "3bb4035b-662c-4a3b-9d78-833294fedff3",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:38798cf93f7e925acc350786ba492716",
+      "actorName": "",
+      "at": "2021-05-19T10:31:50.530Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-19T10:31:45.241Z",
+      "id": "3227f186-a4b4-43b3-ac77-00de1d0de27d",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "272db1f6-284a-4558-acc9-81874b5120bd",
+      "role": "host",
+      "secret": "",
+      "session": "7c356281-7276-4fe2-b6e1-46d289fc615b",
+      "token": "",
+      "topic": "b1113dbf-27cd-4fb0-86ed-7d9c950e75d1",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.904 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-19T10:31:45.302Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-19T10:31:45.302Z",
+      "id": "fcb519b2-91cf-4a0e-94c7-2af75c93f24a",
+      "identity": "t:38798cf93f7e925acc350786ba492716",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "",
+      "role": "guest",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "b1113dbf-27cd-4fb0-86ed-7d9c950e75d1",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.904 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-19T10:31:57.558Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-19T10:31:57.558Z",
+      "id": "e99fde10-65e3-479d-8b37-7592f47daefd",
+      "identity": "t:b81d78a3-ebc8-4db2-a2f8-3c11c2583b14",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "26192274-1155-4f67-aa1a-d2f05a7744f7",
+      "role": "guest",
+      "secret": "",
+      "session": "7c356281-7276-4fe2-b6e1-46d289fc615b",
+      "token": "",
+      "topic": "b1113dbf-27cd-4fb0-86ed-7d9c950e75d1",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.904 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:38798cf93f7e925acc350786ba492716",
+      "actorName": "",
+      "at": "2021-05-19T10:32:10.766Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-19T10:32:10.766Z",
+      "id": "2c149742-4c52-4fa9-b636-c07b7dd56f37",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "a56acc95-0040-49cf-b2b5-33ce2e4ac1c5",
+      "role": "guest",
+      "secret": "",
+      "session": "579667f6-3b1b-4fc1-bd36-77ec75117c5c",
+      "token": "",
+      "topic": "b1113dbf-27cd-4fb0-86ed-7d9c950e75d1",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.904 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:38798cf93f7e925acc350786ba492716",
+      "actorName": "",
+      "at": "2021-05-19T10:31:50.530Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-19T10:31:45.241Z",
+      "id": "3227f186-a4b4-43b3-ac77-00de1d0de27d",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "272db1f6-284a-4558-acc9-81874b5120bd",
+      "role": "host",
+      "secret": "",
+      "session": "7c356281-7276-4fe2-b6e1-46d289fc615b",
+      "token": "",
+      "topic": "b1113dbf-27cd-4fb0-86ed-7d9c950e75d1",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.906 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "e:skywalker",
+      "actorName": "",
+      "at": "2021-05-17T10:19:48.736Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-17T10:19:48.736Z",
+      "id": "d6de09ae-1e5b-422b-96a4-86c8f5804534",
+      "identity": "t:8588e61476b5d13643118ddba381eb94",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "",
+      "role": "guest",
+      "secret": "",
+      "session": "",
+      "token": "",
+      "topic": "dc7ba79d-4880-4dab-a45c-65c06d35b1da",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.906 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:8588e61476b5d13643118ddba381eb94",
+      "actorName": "",
+      "at": "2021-05-17T10:19:51.831Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-17T10:19:48.031Z",
+      "id": "07ae41ae-8a7a-441c-8cf2-cf91e511ded7",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "fb65280a-7e9a-42cc-a413-60d9eb43c4d7",
+      "role": "host",
+      "secret": "",
+      "session": "c58c799c-35b5-4d3a-ac13-fd26d10156f4",
+      "token": "",
+      "topic": "dc7ba79d-4880-4dab-a45c-65c06d35b1da",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.906 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:8588e61476b5d13643118ddba381eb94",
+      "actorName": "",
+      "at": "2021-05-17T10:19:53.745Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-17T10:19:53.745Z",
+      "id": "0a90294c-fa47-4ada-a55f-aed7e163bec7",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "72695e55-2cb2-462b-85a5-426525a2e9c7",
+      "role": "guest",
+      "secret": "",
+      "session": "3bdf6184-d1d2-4672-a64b-d7441be30af6",
+      "token": "",
+      "topic": "dc7ba79d-4880-4dab-a45c-65c06d35b1da",
+      "type": "member"
+    }
+[2021-05-20 11:38:04.906 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:8588e61476b5d13643118ddba381eb94",
+      "actorName": "",
+      "at": "2021-05-17T10:19:51.831Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-17T10:19:48.031Z",
+      "id": "07ae41ae-8a7a-441c-8cf2-cf91e511ded7",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "fb65280a-7e9a-42cc-a413-60d9eb43c4d7",
+      "role": "host",
+      "secret": "",
+      "session": "c58c799c-35b5-4d3a-ac13-fd26d10156f4",
+      "token": "",
+      "topic": "dc7ba79d-4880-4dab-a45c-65c06d35b1da",
+      "type": "member"
+    }
+[2021-05-20 11:38:06.248 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:aa66957870777d2c4c3024ee3a4693a5",
+      "actorName": "",
+      "at": "2021-05-20T11:38:04.612Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both",
+        "roster": "op"
+      },
+      "created": "2021-05-20T11:38:00.371Z",
+      "id": "4e5f0d21-eccf-460b-a63b-05662205700d",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": true,
+      "ref": "3c31cecd-a54f-42dc-888d-5f30fba32276",
+      "role": "host",
+      "secret": "",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "token": "",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "member"
+    }
+[2021-05-20 11:38:06.249 +0000] INFO (router): handleUrlRequest
+    request: {
+      "protocol": "https",
+      "host": "aquila.pexip.io",
+      "path": "/meet/74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "query": "",
+      "fragment": "",
+      "state": {
+        "title": "@pexip/aquila"
+      },
+      "toOrigin": "[Function i]",
+      "isInternal": "[Function s]",
+      "isExternal": "[Function isExternal]",
+      "toString": "[Function toString]",
+      "toInternalHref": "[Function toInternalHref]"
+    }
+[2021-05-20 11:38:06.260 +0000] DEBUG (aquila): User asks for the new stream
+    module: "media"
+    request: {
+      "audio": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+      },
+      "video": {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+      }
+    }
+[2021-05-20 11:38:06.260 +0000] DEBUG (aquila): Start processing new media request
+    module: "media"
+    request: {
+      "audio": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+      },
+      "video": {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+      }
+    }
+[2021-05-20 11:38:06.260 +0000] DEBUG (aquila): Cleanup media stream
+    module: "media"
+[2021-05-20 11:38:06.280 +0000] DEBUG (aquila): getConstraints
+    devices: [
+      {
+        "deviceId": "default",
+        "kind": "audioinput",
+        "label": "Default - Microphone (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "0462fd431b04f9b5eeb4517768664a9ced4f7c2dd6e80893b11b3d3a3dece13f",
+        "kind": "audioinput",
+        "label": "Microphone (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "8ea96a15589ef5e27718fdddceffb595d12ca111dfb2da00b4686429cdfdf328",
+        "kind": "audioinput",
+        "label": "Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      {
+        "deviceId": "fb506093e76995f4acbf5846dda4949f5aba2fecbd45ebebdf6ecff16b55210a",
+        "kind": "videoinput",
+        "label": "Integrated Webcam (0c45:671d)",
+        "groupId": "637cff707de92fa7fdd4a7522911698f292c917e5bd9c56ba00b41cb3a041a0b"
+      },
+      {
+        "deviceId": "default",
+        "kind": "audiooutput",
+        "label": "Default - Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "communications",
+        "kind": "audiooutput",
+        "label": "Communications - Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      },
+      {
+        "deviceId": "801dc1d87eba184bf6c596a5ba8571846e450f37f527aa7938ece0aa95efa2be",
+        "kind": "audiooutput",
+        "label": "Speakers/Headphones (Realtek(R) Audio)",
+        "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+      }
+    ]
+    audio: {
+      "deviceId": "communications",
+      "kind": "audioinput",
+      "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+      "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+    }
+    video: {
+      "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+      "kind": "videoinput",
+      "label": "HD Pro Webcam C920 (046d:082d)",
+      "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+    }
+    constraints: {
+      "audio": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      "video": {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      }
+    }
+[2021-05-20 11:38:06.321 +0000] DEBUG (media-control): Supported constraints
+    supportedConstraints: [
+      [
+        "aspectRatio",
+        true
+      ],
+      [
+        "autoGainControl",
+        true
+      ],
+      [
+        "brightness",
+        true
+      ],
+      [
+        "channelCount",
+        true
+      ],
+      [
+        "colorTemperature",
+        true
+      ],
+      [
+        "contrast",
+        true
+      ],
+      [
+        "deviceId",
+        true
+      ],
+      [
+        "echoCancellation",
+        true
+      ],
+      [
+        "exposureCompensation",
+        true
+      ],
+      [
+        "exposureMode",
+        true
+      ],
+      [
+        "exposureTime",
+        true
+      ],
+      [
+        "facingMode",
+        true
+      ],
+      [
+        "focusDistance",
+        true
+      ],
+      [
+        "focusMode",
+        true
+      ],
+      [
+        "frameRate",
+        true
+      ],
+      [
+        "groupId",
+        true
+      ],
+      [
+        "height",
+        true
+      ],
+      [
+        "iso",
+        true
+      ],
+      [
+        "latency",
+        true
+      ],
+      [
+        "noiseSuppression",
+        true
+      ],
+      [
+        "pan",
+        true
+      ],
+      [
+        "pointsOfInterest",
+        true
+      ],
+      [
+        "resizeMode",
+        true
+      ],
+      [
+        "sampleRate",
+        true
+      ],
+      [
+        "sampleSize",
+        true
+      ],
+      [
+        "saturation",
+        true
+      ],
+      [
+        "sharpness",
+        true
+      ],
+      [
+        "tilt",
+        true
+      ],
+      [
+        "torch",
+        true
+      ],
+      [
+        "whiteBalanceMode",
+        true
+      ],
+      [
+        "width",
+        true
+      ],
+      [
+        "zoom",
+        true
+      ]
+    ]
+[2021-05-20 11:38:06.321 +0000] DEBUG (media-control): Constraints used for getting media
+    request: {
+      "audio": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      "video": {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      "getDefaultConstraints": "[Function getDefaultConstraints]"
+    }
+    constraints: {
+      "audio": {
+        "echoCancellation": {
+          "ideal": true
+        },
+        "noiseSuppression": {
+          "ideal": true
+        },
+        "deviceId": {
+          "ideal": [
+            "communications"
+          ]
+        }
+      },
+      "video": {
+        "aspectRatio": {
+          "ideal": 1.7777777778
+        },
+        "frameRate": {
+          "ideal": 30
+        },
+        "height": {
+          "ideal": 720,
+          "max": 1080
+        },
+        "width": {
+          "ideal": 1280,
+          "max": 1920
+        },
+        "deviceId": {
+          "ideal": [
+            "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a"
+          ]
+        }
+      }
+    }
+[2021-05-20 11:38:07.337 +0000] DEBUG (aquila): New stream processing finished
+    module: "media"
+    request: {
+      "audio": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+      },
+      "video": {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "450e382ab1aabf86aaefdf8b2ff0db444d1405c491b717a34719ac4ff826544c"
+      }
+    }
+    stream: {
+      "__type": "MediaStream",
+      "id": "ipQX0k902GUlmGS2DHXHhxQMsQ4B9gtcDSFK",
+      "active": true
+    }
+    status: "permissions-granted"
+[2021-05-20 11:38:07.344 +0000] DEBUG (media-processor): Create AudioNode
+    target: {
+      "type": "source",
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:38:07.344 +0000] DEBUG (media-processor): Create AudioNode
+    target: {
+      "type": "gain",
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:38:07.344 +0000] DEBUG (media-processor): Connect node
+    prevNode: {}
+    node: {}
+[2021-05-20 11:38:07.344 +0000] DEBUG (media-processor): Create AudioNode
+    target: {
+      "type": "destination",
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:38:07.344 +0000] DEBUG (media-processor): Connect node
+    prevNode: {}
+    node: {}
+[2021-05-20 11:38:07.344 +0000] DEBUG (media-processor): Initial Connection: MediaStreamAudioSourceNode->GainNode->MediaStreamAudioDestinationNode
+    inits: [
+      {
+        "type": "source",
+        "node": {},
+        "nodeIndex": 0,
+        "create": "[Function ]",
+        "release": "[Function ]"
+      },
+      {
+        "type": "worklet",
+        "create": "[Function ]",
+        "release": "[Function ]"
+      },
+      {
+        "type": "gain",
+        "node": {
+          "node": {},
+          "mute": false,
+          "disconnect": "[Function bound disconnect]"
+        },
+        "nodeIndex": 1,
+        "create": "[Function ]",
+        "release": "[Function ]"
+      },
+      {
+        "type": "destination",
+        "node": {},
+        "nodeIndex": 2,
+        "create": "[Function ]",
+        "release": "[Function ]"
+      }
+    ]
+    props: {
+      "closing": false,
+      "nodes": [
+        {},
+        {},
+      ],
+      "inits": [
+        {
+          "type": "source",
+          "node": {},
+          "nodeIndex": 0,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "gain",
+          "node": {
+            "node": {},
+            "mute": false,
+            "disconnect": "[Function bound disconnect]"
+          },
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "destination",
+          "node": {},
+          "nodeIndex": 2,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        }
+      ]
+    }
+[2021-05-20 11:38:07.345 +0000] DEBUG (media-processor): Setting up AudioWorklet Nodes
+    props: {
+      "closing": false,
+      "nodes": [
+        {},
+        {},
+      ],
+      "inits": [
+        {
+          "type": "source",
+          "node": {},
+          "nodeIndex": 0,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "gain",
+          "node": {
+            "node": {},
+            "mute": false,
+            "disconnect": "[Function bound disconnect]"
+          },
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "destination",
+          "node": {},
+          "nodeIndex": 2,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        }
+      ]
+    }
+[2021-05-20 11:38:07.347 +0000] INFO (media-processor): Set mute on GainNode
+    mute: false
+    shouldMute: false
+    gain: 1
+    state: "running"
+    at: 0
+[2021-05-20 11:38:07.347 +0000] DEBUG (aquila): Update stream status
+    module: "media"
+    status: "permissions-granted"
+[2021-05-20 11:38:07.357 +0000] DEBUG (media-processor): AudioContext has changed state
+    audioContextState: {}
+    state: "running"
+[2021-05-20 11:38:07.378 +0000] DEBUG (media-processor): Create AudioNode
+    target: {
+      "type": "worklet",
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:38:07.378 +0000] DEBUG (media-processor): Subscribe to AudioWorklet
+    node: {}
+[2021-05-20 11:38:07.378 +0000] DEBUG (media-processor): Connect node
+    from: {}
+    to: {}
+[2021-05-20 11:38:07.378 +0000] DEBUG (media-processor): Connect node
+    from: {}
+    to: {}
+[2021-05-20 11:38:07.378 +0000] DEBUG (media-processor): Disconnect node
+    from: {}
+    to: {}
+[2021-05-20 11:38:07.379 +0000] DEBUG (media-processor): AudioGraph[insertNode]: MediaStreamAudioSourceNode->AudioWorkletNode->GainNode->MediaStreamAudioDestinationNode
+    node: {
+      "type": "worklet",
+      "node": {},
+      "nodeIndex": 1,
+      "create": "[Function ]",
+      "release": "[Function ]"
+    }
+    at: 1
+    props: {
+      "closing": false,
+      "nodes": [
+        {},
+        {},
+        {},
+      ],
+      "inits": [
+        {
+          "type": "source",
+          "node": {},
+          "nodeIndex": 0,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "worklet",
+          "node": {},
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "gain",
+          "node": {
+            "node": {},
+            "mute": false,
+            "disconnect": "[Function bound disconnect]"
+          },
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "destination",
+          "node": {},
+          "nodeIndex": 2,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        }
+      ]
+    }
+[2021-05-20 11:38:09.313 +0000] INFO (aquila): Join a meeting
+    amIPartOfTopic: true
+[2021-05-20 11:38:09.342 +0000] INFO (peer-connection): call setReference
+    module: "PeerConnection"
+    references: {
+      "module": "PeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "module"
+    value: "MainPeerConnection"
+[2021-05-20 11:38:09.345 +0000] INFO (peer-connection): call setReference
+    module: "PeerConnection"
+    references: {
+      "module": "PeerConnection",
+      "createdAt": "2021-05-20T11:38:09.343Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "module"
+    value: "PresoPeerConnection:receive"
+[2021-05-20 11:38:09.345 +0000] INFO (peer-connection): call setReference
+    module: "PresoPeerConnection:receive"
+    references: {
+      "module": "PresoPeerConnection:receive",
+      "createdAt": "2021-05-20T11:38:09.343Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "presentationDirection"
+    value: "receive"
+[2021-05-20 11:38:09.345 +0000] INFO (peer-connection): set contentSlides
+    module: "PresoPeerConnection:receive"
+    references: {
+      "module": "PresoPeerConnection:receive",
+      "createdAt": "2021-05-20T11:38:09.343Z",
+      "presentationDirection": "receive"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    newContentSlides: true
+    contentSlides: false
+[2021-05-20 11:38:09.346 +0000] INFO (peer-connection): call setReference
+    module: "PeerConnection"
+    references: {
+      "module": "PeerConnection",
+      "createdAt": "2021-05-20T11:38:09.345Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "module"
+    value: "PresoPeerConnection:send"
+[2021-05-20 11:38:09.347 +0000] INFO (peer-connection): call setReference
+    module: "PresoPeerConnection:send"
+    references: {
+      "module": "PresoPeerConnection:send",
+      "createdAt": "2021-05-20T11:38:09.345Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "presentationDirection"
+    value: "send"
+[2021-05-20 11:38:09.347 +0000] INFO (peer-connection): set contentSlides
+    module: "PresoPeerConnection:send"
+    references: {
+      "module": "PresoPeerConnection:send",
+      "createdAt": "2021-05-20T11:38:09.345Z",
+      "presentationDirection": "send"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    newContentSlides: true
+    contentSlides: false
+[2021-05-20 11:38:09.347 +0000] INFO (peer-connection): handle onOfferRequired signal
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    newStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:09.347 +0000] INFO (peer-connection): call setLocalStream
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    mediaStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:09.347 +0000] INFO (peer-connection): Sync Video Track
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+[2021-05-20 11:38:09.347 +0000] DEBUG (peer-connection): syncSenderTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "video",
+      "id": "6fa5d41c-1e88-437a-ada8-4828acfd5357",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:09.347 +0000] DEBUG (peer-connection): addTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "video",
+      "id": "6fa5d41c-1e88-437a-ada8-4828acfd5357",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:09.353 +0000] INFO (peer-connection): Sync Audio Track
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+[2021-05-20 11:38:09.353 +0000] DEBUG (peer-connection): syncSenderTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "audio",
+      "id": "c96e6440-d839-4ea4-97df-89497b559987",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:09.353 +0000] DEBUG (peer-connection): addTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "audio",
+      "id": "c96e6440-d839-4ea4-97df-89497b559987",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:09.365 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "identity": "t:466f81dd-2927-4c40-97f2-21a61d796640",
+      "role": "guest",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "chat": "both",
+        "present": "mutedOnJoin"
+      },
+      "type": "member",
+      "id": "d56ceb22-fe66-4f5d-a5e6-25c03398262c"
+    }
+[2021-05-20 11:38:09.380 +0000] INFO (peer-connection): onnegotiationneeded handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+[2021-05-20 11:38:09.380 +0000] INFO (peer-connection): onNegotiationNeeded emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+[2021-05-20 11:38:09.381 +0000] INFO (peer-connection): handle onNegotiationNeeded signal
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+[2021-05-20 11:38:09.381 +0000] INFO (peer-connection): call createOffer
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+[2021-05-20 11:38:09.389 +0000] DEBUG (peer-connection): SDP mangled
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    sdp: {
+      "type": "offer",
+      "sdp": "v=0\r\no=- 2438921893902111003 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 35 36 124 119 123 118 114 115 116\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=ice-options:trickle\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:121 rtx/90000\r\na=fmtp:121 apt=102\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:120 rtx/90000\r\na=fmtp:120 apt=127\r\na=rtpmap:125 H264/90000\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:35 AV1X/90000\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=rtpmap:36 rtx/90000\r\na=fmtp:36 apt=35\r\na=rtpmap:124 H264/90000\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:119 rtx/90000\r\na=fmtp:119 apt=124\r\na=rtpmap:123 H264/90000\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:118 rtx/90000\r\na=fmtp:118 apt=123\r\na=rtpmap:114 red/90000\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:116 ulpfec/90000\r\na=ssrc-group:FID 3427960111 1164205797\r\na=ssrc:3427960111 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:3427960111 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:3427960111 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:3427960111 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:1164205797 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:1164205797 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=ice-options:trickle\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:4208813954 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:4208813954 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=ssrc:4208813954 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:4208813954 label:c96e6440-d839-4ea4-97df-89497b559987\r\n"
+    }
+    offer: {
+      "sdp": "v=0\r\no=- 2438921893902111003 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=group:BUNDLE 0 1\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 35 36 124 119 123 118 114 115 116\r\nc=IN IP4 0.0.0.0\r\nb=AS:1280\r\na=rtpmap:96 VP8/90000\r\na=rtpmap:97 rtx/90000\r\na=rtpmap:98 VP9/90000\r\na=rtpmap:99 rtx/90000\r\na=rtpmap:100 VP9/90000\r\na=rtpmap:101 rtx/90000\r\na=rtpmap:102 H264/90000\r\na=rtpmap:121 rtx/90000\r\na=rtpmap:127 H264/90000\r\na=rtpmap:120 rtx/90000\r\na=rtpmap:125 H264/90000\r\na=rtpmap:107 rtx/90000\r\na=rtpmap:108 H264/90000\r\na=rtpmap:109 rtx/90000\r\na=rtpmap:35 AV1X/90000\r\na=rtpmap:36 rtx/90000\r\na=rtpmap:124 H264/90000\r\na=rtpmap:119 rtx/90000\r\na=rtpmap:123 H264/90000\r\na=rtpmap:118 rtx/90000\r\na=rtpmap:114 red/90000\r\na=rtpmap:115 rtx/90000\r\na=rtpmap:116 ulpfec/90000\r\na=fmtp:97 apt=96\r\na=fmtp:98 profile-id=0\r\na=fmtp:99 apt=98\r\na=fmtp:100 profile-id=2\r\na=fmtp:101 apt=100\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=fmtp:121 apt=102\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=fmtp:120 apt=127\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=fmtp:107 apt=125\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=fmtp:109 apt=108\r\na=fmtp:36 apt=35\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=fmtp:119 apt=124\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=fmtp:118 apt=123\r\na=fmtp:115 apt=114\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=setup:actpass\r\na=mid:0\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=sendrecv\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=ice-options:trickle\r\na=ssrc:3427960111 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:3427960111 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:3427960111 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:3427960111 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:1164205797 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:1164205797 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc-group:FID 3427960111 1164205797\r\na=rtcp-mux\r\na=rtcp-rsize\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtpmap:111 opus/48000/2\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=rtcp-fb:111 transport-cc\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=setup:actpass\r\na=mid:1\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=sendrecv\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=ice-options:trickle\r\na=ssrc:4208813954 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:4208813954 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=ssrc:4208813954 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:4208813954 label:c96e6440-d839-4ea4-97df-89497b559987\r\na=rtcp-mux\r\n",
+      "type": "offer"
+    }
+[2021-05-20 11:38:09.389 +0000] INFO (peer-connection): emit offer
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    offer: {
+      "sdp": "v=0\r\no=- 2438921893902111003 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=group:BUNDLE 0 1\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 35 36 124 119 123 118 114 115 116\r\nc=IN IP4 0.0.0.0\r\nb=AS:1280\r\na=rtpmap:96 VP8/90000\r\na=rtpmap:97 rtx/90000\r\na=rtpmap:98 VP9/90000\r\na=rtpmap:99 rtx/90000\r\na=rtpmap:100 VP9/90000\r\na=rtpmap:101 rtx/90000\r\na=rtpmap:102 H264/90000\r\na=rtpmap:121 rtx/90000\r\na=rtpmap:127 H264/90000\r\na=rtpmap:120 rtx/90000\r\na=rtpmap:125 H264/90000\r\na=rtpmap:107 rtx/90000\r\na=rtpmap:108 H264/90000\r\na=rtpmap:109 rtx/90000\r\na=rtpmap:35 AV1X/90000\r\na=rtpmap:36 rtx/90000\r\na=rtpmap:124 H264/90000\r\na=rtpmap:119 rtx/90000\r\na=rtpmap:123 H264/90000\r\na=rtpmap:118 rtx/90000\r\na=rtpmap:114 red/90000\r\na=rtpmap:115 rtx/90000\r\na=rtpmap:116 ulpfec/90000\r\na=fmtp:97 apt=96\r\na=fmtp:98 profile-id=0\r\na=fmtp:99 apt=98\r\na=fmtp:100 profile-id=2\r\na=fmtp:101 apt=100\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=fmtp:121 apt=102\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=fmtp:120 apt=127\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=fmtp:107 apt=125\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=fmtp:109 apt=108\r\na=fmtp:36 apt=35\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=fmtp:119 apt=124\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=fmtp:118 apt=123\r\na=fmtp:115 apt=114\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=setup:actpass\r\na=mid:0\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=sendrecv\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=ice-options:trickle\r\na=ssrc:3427960111 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:3427960111 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:3427960111 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:3427960111 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:1164205797 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:1164205797 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc-group:FID 3427960111 1164205797\r\na=rtcp-mux\r\na=rtcp-rsize\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtpmap:111 opus/48000/2\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=rtcp-fb:111 transport-cc\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=setup:actpass\r\na=mid:1\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=sendrecv\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=ice-options:trickle\r\na=ssrc:4208813954 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:4208813954 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=ssrc:4208813954 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:4208813954 label:c96e6440-d839-4ea4-97df-89497b559987\r\na=rtcp-mux\r\n",
+      "type": "offer"
+    }
+[2021-05-20 11:38:09.389 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "sdp": "v=0\r\no=- 2438921893902111003 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=group:BUNDLE 0 1\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 121 127 120 125 107 108 109 35 36 124 119 123 118 114 115 116\r\nc=IN IP4 0.0.0.0\r\nb=AS:1280\r\na=rtpmap:96 VP8/90000\r\na=rtpmap:97 rtx/90000\r\na=rtpmap:98 VP9/90000\r\na=rtpmap:99 rtx/90000\r\na=rtpmap:100 VP9/90000\r\na=rtpmap:101 rtx/90000\r\na=rtpmap:102 H264/90000\r\na=rtpmap:121 rtx/90000\r\na=rtpmap:127 H264/90000\r\na=rtpmap:120 rtx/90000\r\na=rtpmap:125 H264/90000\r\na=rtpmap:107 rtx/90000\r\na=rtpmap:108 H264/90000\r\na=rtpmap:109 rtx/90000\r\na=rtpmap:35 AV1X/90000\r\na=rtpmap:36 rtx/90000\r\na=rtpmap:124 H264/90000\r\na=rtpmap:119 rtx/90000\r\na=rtpmap:123 H264/90000\r\na=rtpmap:118 rtx/90000\r\na=rtpmap:114 red/90000\r\na=rtpmap:115 rtx/90000\r\na=rtpmap:116 ulpfec/90000\r\na=fmtp:97 apt=96\r\na=fmtp:98 profile-id=0\r\na=fmtp:99 apt=98\r\na=fmtp:100 profile-id=2\r\na=fmtp:101 apt=100\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=fmtp:121 apt=102\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=fmtp:120 apt=127\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=fmtp:107 apt=125\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=fmtp:109 apt=108\r\na=fmtp:36 apt=35\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=fmtp:119 apt=124\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=fmtp:118 apt=123\r\na=fmtp:115 apt=114\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=setup:actpass\r\na=mid:0\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=sendrecv\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=ice-options:trickle\r\na=ssrc:3427960111 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:3427960111 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:3427960111 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:3427960111 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:1164205797 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af 6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc:1164205797 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:1164205797 label:6fa5d41c-1e88-437a-ada8-4828acfd5357\r\na=ssrc-group:FID 3427960111 1164205797\r\na=rtcp-mux\r\na=rtcp-rsize\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtpmap:111 opus/48000/2\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=rtcp-fb:111 transport-cc\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=setup:actpass\r\na=mid:1\r\na=msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=sendrecv\r\na=ice-ufrag:+T5B\r\na=ice-pwd:6yNw/JlMVXdmeEwlodFHjjK6\r\na=fingerprint:sha-256 63:2B:79:73:98:25:8D:6C:8A:1F:B7:2C:F1:44:B0:8A:E6:DD:66:91:C7:C4:C5:88:03:D6:E9:7E:A1:EA:42:58\r\na=ice-options:trickle\r\na=ssrc:4208813954 cname:3LqrhmoLPHzr8jl3\r\na=ssrc:4208813954 msid:33e6d5c4-3fa4-49b3-9d33-24b2b07187af c96e6440-d839-4ea4-97df-89497b559987\r\na=ssrc:4208813954 mslabel:33e6d5c4-3fa4-49b3-9d33-24b2b07187af\r\na=ssrc:4208813954 label:c96e6440-d839-4ea4-97df-89497b559987\r\na=rtcp-mux\r\n",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "call",
+      "id": "5a699c22-eda2-48d5-b993-1390d2d72428"
+    }
+[2021-05-20 11:38:09.389 +0000] INFO (peer-connection): call setReference
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "callRef"
+    value: "5a699c22-eda2-48d5-b993-1390d2d72428"
+[2021-05-20 11:38:10.458 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-20T11:38:09.091Z",
+      "audio": "",
+      "can": {
+        "audio": "both",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-20T11:38:09.091Z",
+      "id": "126f2747-4dc5-46b8-bf90-33654e3efe91",
+      "identity": "t:466f81dd-2927-4c40-97f2-21a61d796640",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "d56ceb22-fe66-4f5d-a5e6-25c03398262c",
+      "role": "guest",
+      "secret": "",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "token": "",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "member"
+    }
+[2021-05-20 11:38:10.942 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:38:10.625Z",
+      "audio": false,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": null,
+      "present": "",
+      "recoverToken": "",
+      "ref": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "sdp": "v=0\r\no=- 1621510690 1621510691 IN IP4 127.0.0.1\r\ns=-\r\nc=IN IP4 35.204.180.34\r\nb=AS:3796\r\nt=0 0\r\nm=video 45406 UDP/TLS/RTP/SAVPF 98 100 127 102 108 125 96 114 116 97 99 101 115 107\r\nc=IN IP4 35.204.180.34\r\nb=TIAS:3732480\r\na=rtpmap:98 VP9/90000\r\na=fmtp:98 max-fs=8160;max-fr=30\r\na=rtpmap:100 VP9/90000\r\na=fmtp:100 max-fs=8160;max-fr=30\r\na=rtpmap:127 H264/90000\r\na=fmtp:127 profile-level-id=428014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;level-asymmetry-allowed=1\r\na=rtpmap:102 H264/90000\r\na=fmtp:102 profile-level-id=428014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;packetization-mode=1;level-asymmetry-allowed=1\r\na=rtpmap:108 H264/90000\r\na=fmtp:108 profile-level-id=42c014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;level-asymmetry-allowed=1\r\na=rtpmap:125 H264/90000\r\na=fmtp:125 profile-level-id=42c014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;packetization-mode=1;level-asymmetry-allowed=1\r\na=rtpmap:96 VP8/90000\r\na=fmtp:96 max-fs=8160;max-fr=30\r\na=rtpmap:114 red/90000\r\na=rtpmap:116 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=98\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtcp-fb:* nack pli\r\na=rtcp-fb:* nack\r\na=rtcp-fb:* goog-remb\r\na=rtcp-fb:* transport-cc\r\na=ssrc-group:FID 959653343 65004362\r\na=sendrecv\r\na=content:main\r\na=label:11\r\na=mid:0\r\na=connection:new\r\na=rtcp-mux\r\na=fingerprint:sha-256 CE:36:86:21:7F:A5:AE:99:5D:7B:CB:13:E3:D4:D4:33:EE:9E:20:15:77:4F:E4:4C:94:42:B5:87:D3:58:BF:6F\r\na=setup:active\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=ssrc:959653343 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:959653343 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq cb199619-601a-43af-b9db-4883a2409f41\r\na=ssrc:65004362 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:65004362 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq cb199619-601a-43af-b9db-4883a2409f41\r\na=candidate:1 1 udp 2042888703 35.204.180.34 45406 typ host\r\na=candidate:2 1 tcp 855900927 35.204.180.34 45406 typ host tcptype passive\r\na=candidate:3 1 tcp 864289791 35.204.180.34 45406 typ host tcptype active\r\na=ice-ufrag:gici\r\na=ice-pwd:3+ykK4+fM+964qTYfTI7Fx\r\nm=audio 45410 UDP/TLS/RTP/SAVPF 111 9 0 8 126 110 113 112\r\nc=IN IP4 35.204.180.34\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 useinbandfec=1;stereo=0\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:126 telephone-event/8000\r\na=fmtp:126 0-15\r\na=rtpmap:110 telephone-event/48000\r\na=fmtp:110 0-15\r\na=rtpmap:113 telephone-event/16000\r\na=fmtp:113 0-15\r\na=rtpmap:112 telephone-event/32000\r\na=fmtp:112 0-15\r\na=sendrecv\r\na=mid:1\r\na=connection:new\r\na=rtcp-mux\r\na=fingerprint:sha-256 CE:36:86:21:7F:A5:AE:99:5D:7B:CB:13:E3:D4:D4:33:EE:9E:20:15:77:4F:E4:4C:94:42:B5:87:D3:58:BF:6F\r\na=setup:active\r\na=ssrc:2792518512 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:2792518512 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq 44cc6892-3b12-4014-8455-d51e54e4e381\r\na=candidate:1 1 udp 2042888703 35.204.180.34 45410 typ host\r\na=candidate:2 1 tcp 855900927 35.204.180.34 45410 typ host tcptype passive\r\na=candidate:3 1 tcp 864289791 35.204.180.34 45410 typ host tcptype active\r\na=ice-ufrag:FPDA\r\na=ice-pwd:qwChK5CvbBfMj87xzxOeLW\r\n",
+      "session": "",
+      "topic": "",
+      "type": "call",
+      "video": false
+    }
+[2021-05-20 11:38:10.942 +0000] INFO (peer-connection): call setReference
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "5a699c22-eda2-48d5-b993-1390d2d72428"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "callId"
+    value: "018e915a-8902-4f6d-99bb-a01174a2b00e"
+[2021-05-20 11:38:10.942 +0000] INFO (peer-connection): handle receiveAnswer signal
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    answer: {
+      "type": "answer",
+      "sdp": "v=0\r\no=- 1621510690 1621510691 IN IP4 127.0.0.1\r\ns=-\r\nc=IN IP4 35.204.180.34\r\nb=AS:3796\r\nt=0 0\r\nm=video 45406 UDP/TLS/RTP/SAVPF 98 100 127 102 108 125 96 114 116 97 99 101 115 107\r\nc=IN IP4 35.204.180.34\r\nb=TIAS:3732480\r\na=rtpmap:98 VP9/90000\r\na=fmtp:98 max-fs=8160;max-fr=30\r\na=rtpmap:100 VP9/90000\r\na=fmtp:100 max-fs=8160;max-fr=30\r\na=rtpmap:127 H264/90000\r\na=fmtp:127 profile-level-id=428014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;level-asymmetry-allowed=1\r\na=rtpmap:102 H264/90000\r\na=fmtp:102 profile-level-id=428014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;packetization-mode=1;level-asymmetry-allowed=1\r\na=rtpmap:108 H264/90000\r\na=fmtp:108 profile-level-id=42c014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;level-asymmetry-allowed=1\r\na=rtpmap:125 H264/90000\r\na=fmtp:125 profile-level-id=42c014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;packetization-mode=1;level-asymmetry-allowed=1\r\na=rtpmap:96 VP8/90000\r\na=fmtp:96 max-fs=8160;max-fr=30\r\na=rtpmap:114 red/90000\r\na=rtpmap:116 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=98\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtcp-fb:* nack pli\r\na=rtcp-fb:* nack\r\na=rtcp-fb:* goog-remb\r\na=rtcp-fb:* transport-cc\r\na=ssrc-group:FID 959653343 65004362\r\na=sendrecv\r\na=content:main\r\na=label:11\r\na=mid:0\r\na=connection:new\r\na=rtcp-mux\r\na=fingerprint:sha-256 CE:36:86:21:7F:A5:AE:99:5D:7B:CB:13:E3:D4:D4:33:EE:9E:20:15:77:4F:E4:4C:94:42:B5:87:D3:58:BF:6F\r\na=setup:active\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=ssrc:959653343 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:959653343 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq cb199619-601a-43af-b9db-4883a2409f41\r\na=ssrc:65004362 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:65004362 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq cb199619-601a-43af-b9db-4883a2409f41\r\na=candidate:1 1 udp 2042888703 35.204.180.34 45406 typ host\r\na=candidate:2 1 tcp 855900927 35.204.180.34 45406 typ host tcptype passive\r\na=candidate:3 1 tcp 864289791 35.204.180.34 45406 typ host tcptype active\r\na=ice-ufrag:gici\r\na=ice-pwd:3+ykK4+fM+964qTYfTI7Fx\r\nm=audio 45410 UDP/TLS/RTP/SAVPF 111 9 0 8 126 110 113 112\r\nc=IN IP4 35.204.180.34\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 useinbandfec=1;stereo=0\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:126 telephone-event/8000\r\na=fmtp:126 0-15\r\na=rtpmap:110 telephone-event/48000\r\na=fmtp:110 0-15\r\na=rtpmap:113 telephone-event/16000\r\na=fmtp:113 0-15\r\na=rtpmap:112 telephone-event/32000\r\na=fmtp:112 0-15\r\na=sendrecv\r\na=mid:1\r\na=connection:new\r\na=rtcp-mux\r\na=fingerprint:sha-256 CE:36:86:21:7F:A5:AE:99:5D:7B:CB:13:E3:D4:D4:33:EE:9E:20:15:77:4F:E4:4C:94:42:B5:87:D3:58:BF:6F\r\na=setup:active\r\na=ssrc:2792518512 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:2792518512 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq 44cc6892-3b12-4014-8455-d51e54e4e381\r\na=candidate:1 1 udp 2042888703 35.204.180.34 45410 typ host\r\na=candidate:2 1 tcp 855900927 35.204.180.34 45410 typ host tcptype passive\r\na=candidate:3 1 tcp 864289791 35.204.180.34 45410 typ host tcptype active\r\na=ice-ufrag:FPDA\r\na=ice-pwd:qwChK5CvbBfMj87xzxOeLW\r\n"
+    }
+[2021-05-20 11:38:10.942 +0000] INFO (peer-connection): call receiveAnswer
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    answer: {
+      "type": "answer",
+      "sdp": "v=0\r\no=- 1621510690 1621510691 IN IP4 127.0.0.1\r\ns=-\r\nc=IN IP4 35.204.180.34\r\nb=AS:3796\r\nt=0 0\r\nm=video 45406 UDP/TLS/RTP/SAVPF 98 100 127 102 108 125 96 114 116 97 99 101 115 107\r\nc=IN IP4 35.204.180.34\r\nb=TIAS:3732480\r\na=rtpmap:98 VP9/90000\r\na=fmtp:98 max-fs=8160;max-fr=30\r\na=rtpmap:100 VP9/90000\r\na=fmtp:100 max-fs=8160;max-fr=30\r\na=rtpmap:127 H264/90000\r\na=fmtp:127 profile-level-id=428014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;level-asymmetry-allowed=1\r\na=rtpmap:102 H264/90000\r\na=fmtp:102 profile-level-id=428014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;packetization-mode=1;level-asymmetry-allowed=1\r\na=rtpmap:108 H264/90000\r\na=fmtp:108 profile-level-id=42c014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;level-asymmetry-allowed=1\r\na=rtpmap:125 H264/90000\r\na=fmtp:125 profile-level-id=42c014;max-br=3732;max-mbps=245760;max-fs=8192;max-smbps=245760;max-fps=3000;packetization-mode=1;level-asymmetry-allowed=1\r\na=rtpmap:96 VP8/90000\r\na=fmtp:96 max-fs=8160;max-fr=30\r\na=rtpmap:114 red/90000\r\na=rtpmap:116 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=98\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtcp-fb:* nack pli\r\na=rtcp-fb:* nack\r\na=rtcp-fb:* goog-remb\r\na=rtcp-fb:* transport-cc\r\na=ssrc-group:FID 959653343 65004362\r\na=sendrecv\r\na=content:main\r\na=label:11\r\na=mid:0\r\na=connection:new\r\na=rtcp-mux\r\na=fingerprint:sha-256 CE:36:86:21:7F:A5:AE:99:5D:7B:CB:13:E3:D4:D4:33:EE:9E:20:15:77:4F:E4:4C:94:42:B5:87:D3:58:BF:6F\r\na=setup:active\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=ssrc:959653343 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:959653343 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq cb199619-601a-43af-b9db-4883a2409f41\r\na=ssrc:65004362 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:65004362 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq cb199619-601a-43af-b9db-4883a2409f41\r\na=candidate:1 1 udp 2042888703 35.204.180.34 45406 typ host\r\na=candidate:2 1 tcp 855900927 35.204.180.34 45406 typ host tcptype passive\r\na=candidate:3 1 tcp 864289791 35.204.180.34 45406 typ host tcptype active\r\na=ice-ufrag:gici\r\na=ice-pwd:3+ykK4+fM+964qTYfTI7Fx\r\nm=audio 45410 UDP/TLS/RTP/SAVPF 111 9 0 8 126 110 113 112\r\nc=IN IP4 35.204.180.34\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 useinbandfec=1;stereo=0\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:126 telephone-event/8000\r\na=fmtp:126 0-15\r\na=rtpmap:110 telephone-event/48000\r\na=fmtp:110 0-15\r\na=rtpmap:113 telephone-event/16000\r\na=fmtp:113 0-15\r\na=rtpmap:112 telephone-event/32000\r\na=fmtp:112 0-15\r\na=sendrecv\r\na=mid:1\r\na=connection:new\r\na=rtcp-mux\r\na=fingerprint:sha-256 CE:36:86:21:7F:A5:AE:99:5D:7B:CB:13:E3:D4:D4:33:EE:9E:20:15:77:4F:E4:4C:94:42:B5:87:D3:58:BF:6F\r\na=setup:active\r\na=ssrc:2792518512 cname:018e915a-8902-4f6d-99bb-a01174a2b00e\r\na=ssrc:2792518512 msid:6M5kubeVz71rGyfZitWZotlppOcBBKQq 44cc6892-3b12-4014-8455-d51e54e4e381\r\na=candidate:1 1 udp 2042888703 35.204.180.34 45410 typ host\r\na=candidate:2 1 tcp 855900927 35.204.180.34 45410 typ host tcptype passive\r\na=candidate:3 1 tcp 864289791 35.204.180.34 45410 typ host tcptype active\r\na=ice-ufrag:FPDA\r\na=ice-pwd:qwChK5CvbBfMj87xzxOeLW\r\n"
+    }
+[2021-05-20 11:38:10.943 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "audio": true,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "video": true,
+      "type": "updateCall",
+      "id": "304c138d-b040-43d6-98da-675d4e802a99"
+    }
+[2021-05-20 11:38:10.943 +0000] INFO (peer-connection): call setReference
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    key: "callRef"
+    value: "304c138d-b040-43d6-98da-675d4e802a99"
+[2021-05-20 11:38:10.947 +0000] INFO (peer-connection): onsignalingstatechange handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "have-local-offer"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:10.953 +0000] INFO (peer-connection): onIceGatheringStateChange emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "gathering"
+    signalingState: "have-local-offer"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.255 +0000] INFO (peer-connection): oniceconnectionstatechange handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "have-local-offer"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.256 +0000] INFO (peer-connection): onsignalingstatechange handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.257 +0000] INFO (peer-connection): ontrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.257 +0000] DEBUG (peer-connection): new stream
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    newRemoteStreams: [
+      {
+        "__type": "MediaStream",
+        "id": "6M5kubeVz71rGyfZitWZotlppOcBBKQq",
+        "active": true
+      }
+    ]
+    remoteStreams: []
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.257 +0000] DEBUG (peer-connection): new remote stream
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "6M5kubeVz71rGyfZitWZotlppOcBBKQq",
+      "active": true
+    }
+[2021-05-20 11:38:11.257 +0000] INFO (peer-connection): onRemoteStream emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    remoteStream: {
+      "__type": "MediaStream",
+      "id": "6M5kubeVz71rGyfZitWZotlppOcBBKQq",
+      "active": true
+    }
+[2021-05-20 11:38:11.265 +0000] INFO (peer-connection): ontrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.268 +0000] DEBUG (peer-connection): new stream
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    newRemoteStreams: []
+    remoteStreams: [
+      {
+        "__type": "MediaStream",
+        "id": "6M5kubeVz71rGyfZitWZotlppOcBBKQq",
+        "active": true
+      }
+    ]
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.269 +0000] INFO (peer-connection): onicecandidate handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.269 +0000] INFO (peer-connection): onIceCandidate emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.269 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "list": [
+        {
+          "candidate": "candidate:1008872818 1 udp 2122260223 192.168.1.69 56197 typ host generation 0 ufrag +T5B network-id 1",
+          "mid": "0",
+          "ufrag": "+T5B"
+        }
+      ],
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "trickleIce",
+      "id": "6a2fd7ee-138f-433f-965f-e4a871da69b1"
+    }
+[2021-05-20 11:38:11.270 +0000] INFO (peer-connection): onicecandidate handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.270 +0000] INFO (peer-connection): onIceCandidate emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.270 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "list": [
+        {
+          "candidate": "candidate:1008872818 1 udp 2122260223 192.168.1.69 56198 typ host generation 0 ufrag +T5B network-id 1",
+          "mid": "1",
+          "ufrag": "+T5B"
+        }
+      ],
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "trickleIce",
+      "id": "8f7614c7-c599-43d0-b2c0-ec7aca105b82"
+    }
+[2021-05-20 11:38:11.271 +0000] INFO (peer-connection): onicecandidate handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.271 +0000] INFO (peer-connection): onIceCandidate emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.271 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "list": [
+        {
+          "candidate": "candidate:1923207554 1 tcp 1518280447 192.168.1.69 9 typ host tcptype active generation 0 ufrag +T5B network-id 1",
+          "mid": "0",
+          "ufrag": "+T5B"
+        }
+      ],
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "trickleIce",
+      "id": "cb3061ed-0781-411a-9748-2eee86690435"
+    }
+[2021-05-20 11:38:11.272 +0000] INFO (peer-connection): onicecandidate handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.272 +0000] INFO (peer-connection): onIceCandidate emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.272 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "list": [
+        {
+          "candidate": "candidate:1923207554 1 tcp 1518280447 192.168.1.69 9 typ host tcptype active generation 0 ufrag +T5B network-id 1",
+          "mid": "1",
+          "ufrag": "+T5B"
+        }
+      ],
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "trickleIce",
+      "id": "d2d057fd-b50c-485a-99bf-31fc7b7ee38d"
+    }
+[2021-05-20 11:38:11.272 +0000] INFO (peer-connection): handle onOfferRequired signal
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    newStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:11.272 +0000] INFO (peer-connection): call setLocalStream
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    mediaStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:11.272 +0000] INFO (peer-connection): Sync Video Track
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+[2021-05-20 11:38:11.273 +0000] DEBUG (peer-connection): syncSenderTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    sender: {}
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "video",
+      "id": "6fa5d41c-1e88-437a-ada8-4828acfd5357",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:11.273 +0000] DEBUG (peer-connection): replaceTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "gathering"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    sender: {}
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "video",
+      "id": "6fa5d41c-1e88-437a-ada8-4828acfd5357",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:11.303 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": true,
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-20T11:38:10.906Z",
+      "audio": true,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "id": "eac14ac1-00b9-4764-9766-076de7de2794",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": true
+    }
+[2021-05-20 11:38:11.305 +0000] INFO (peer-connection): onIceGatheringStateChange emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.305 +0000] INFO (peer-connection): onicecandidate handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "new"
+    iceConnectionState: "checking"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.306 +0000] INFO (peer-connection): onConnectionStateChange emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connecting"
+    iceConnectionState: "checking"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.306 +0000] INFO (peer-connection): Sync Audio Track
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connecting"
+    iceConnectionState: "checking"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+[2021-05-20 11:38:11.306 +0000] DEBUG (peer-connection): syncSenderTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connecting"
+    iceConnectionState: "checking"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    sender: {}
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "audio",
+      "id": "c96e6440-d839-4ea4-97df-89497b559987",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:11.306 +0000] DEBUG (peer-connection): replaceTrack
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connecting"
+    iceConnectionState: "checking"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    stream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+    sender: {}
+    track: {
+      "__type": "MediaStreamTrack",
+      "kind": "audio",
+      "id": "c96e6440-d839-4ea4-97df-89497b559987",
+      "enabled": true
+    }
+    localStream: {
+      "__type": "MediaStream",
+      "id": "33e6d5c4-3fa4-49b3-9d33-24b2b07187af",
+      "active": true
+    }
+[2021-05-20 11:38:11.306 +0000] INFO (peer-connection): oniceconnectionstatechange handler
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connecting"
+    iceConnectionState: "connected"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:11.386 +0000] DEBUG (aquila): Turn off Audio Detection
+    hasSignal: true
+[2021-05-20 11:38:11.386 +0000] DEBUG (aquila): Notify about Audio Detection
+    hasSignal: true
+[2021-05-20 11:38:11.478 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:38:11.164Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "1:0",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:38:11.946 +0000] INFO (peer-connection): onConnectionStateChange emitted
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connected"
+    iceConnectionState: "connected"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+    event: {
+      "isTrusted": true
+    }
+[2021-05-20 11:38:12.110 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": true,
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-20T11:38:10.631Z",
+      "audio": false,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "id": "0a83a245-3d69-426b-be83-dc652c84030c",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": false
+    }
+[2021-05-20 11:38:30.847 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "t:aa66957870777d2c4c3024ee3a4693a5",
+      "actorName": "",
+      "at": "2021-05-20T11:38:30.249Z",
+      "audio": "",
+      "can": {
+        "audio": "mutedOnJoin",
+        "video": "both",
+        "present": "mutedOnJoin",
+        "chat": "both"
+      },
+      "created": "2021-05-20T11:38:30.249Z",
+      "id": "1d3b851a-9fcc-41a0-8705-45068efb7873",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "",
+      "mediaRequired": false,
+      "meetingRef": "",
+      "meetingTitle": "",
+      "owner": false,
+      "ref": "2df5236d-33d0-4b74-bcbd-fd0cab9a7ee9",
+      "role": "guest",
+      "secret": "",
+      "session": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "token": "",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "member"
+    }
+[2021-05-20 11:38:38.231 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": true,
+      "actor": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "actorName": "Sam Phillips",
+      "at": "2021-05-20T11:38:37.863Z",
+      "audio": false,
+      "callId": "7af3e146-a2cf-4bb8-84a9-6e4d9afb80a9",
+      "id": "1d66ee8f-df4c-4e7a-8acc-0fa0af71492f",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "06cdca6c-ad12-4bfd-9a83-c721e91fdf4c",
+      "session": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": false
+    }
+[2021-05-20 11:38:39.336 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": true,
+      "actor": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "actorName": "Sam Phillips",
+      "at": "2021-05-20T11:38:37.927Z",
+      "audio": true,
+      "callId": "7af3e146-a2cf-4bb8-84a9-6e4d9afb80a9",
+      "id": "c5696ee3-07d9-4c55-8077-d4bc8d7e0485",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "06cdca6c-ad12-4bfd-9a83-c721e91fdf4c",
+      "session": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": true
+    }
+[2021-05-20 11:38:39.515 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:38:39.201Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:38:51.547 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:38:51.229Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:38:56.555 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:38:56.236Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:39:06.574 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:39:06.257Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:39:14.589 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:39:14.272Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:39:36.631 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:39:36.313Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:39:44.647 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:39:44.331Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:40:16.203 +0000] DEBUG (aquila): Open settings
+    meetingStatus: "preflight"
+[2021-05-20 11:40:16.219 +0000] DEBUG (media-processor): Create AudioNode
+    target: {
+      "type": "source",
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:40:16.219 +0000] DEBUG (media-processor): Create AudioNode
+    target: {
+      "type": "analyzer",
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:40:16.219 +0000] DEBUG (media-processor): Connect node
+    prevNode: {}
+    node: {}
+[2021-05-20 11:40:16.220 +0000] DEBUG (media-processor): Initial Connection: MediaStreamAudioSourceNode->AnalyserNode
+    inits: [
+      {
+        "type": "source",
+        "node": {},
+        "nodeIndex": 0,
+        "create": "[Function ]",
+        "release": "[Function ]"
+      },
+      {
+        "type": "analyzer",
+        "node": {
+          "node": {},
+          "frequencyBinCount": 32,
+          "fftSize": 64,
+          "minDecibels": -100,
+          "maxDecibels": -30,
+          "smoothingTimeConstant": 0.8,
+          "getByteTimeDomainData": "[Function bound getByteTimeDomainData]",
+          "getByteFrequencyData": "[Function bound getByteFrequencyData]",
+          "getFloatFrequencyData": "[Function bound getFloatFrequencyData]",
+          "getFloatTimeDomainData": "[Function l]",
+          "getAverageVolume": "[Function getAverageVolume]",
+          "disconnect": "[Function bound disconnect]"
+        },
+        "nodeIndex": 1,
+        "create": "[Function ]",
+        "release": "[Function ]"
+      }
+    ]
+    props: {
+      "closing": false,
+      "nodes": [
+        {},
+      ],
+      "inits": [
+        {
+          "type": "source",
+          "node": {},
+          "nodeIndex": 0,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "analyzer",
+          "node": {
+            "node": {},
+            "frequencyBinCount": 32,
+            "fftSize": 64,
+            "minDecibels": -100,
+            "maxDecibels": -30,
+            "smoothingTimeConstant": 0.8,
+            "getByteTimeDomainData": "[Function bound getByteTimeDomainData]",
+            "getByteFrequencyData": "[Function bound getByteFrequencyData]",
+            "getFloatFrequencyData": "[Function bound getFloatFrequencyData]",
+            "getFloatTimeDomainData": "[Function l]",
+            "getAverageVolume": "[Function getAverageVolume]",
+            "disconnect": "[Function bound disconnect]"
+          },
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        }
+      ]
+    }
+[2021-05-20 11:40:16.261 +0000] DEBUG (media-processor): AudioContext has changed state
+    audioContextState: {}
+    state: "running"
+[2021-05-20 11:40:25.564 +0000] DEBUG (aquila): Close settings
+    meetingStatus: "in-meeting"
+[2021-05-20 11:40:25.565 +0000] INFO (aquila): [PreviewStreamController] Revert Changes
+    mainMuted: false
+    audioChanged: false
+    current: {
+      "deviceId": "communications",
+      "kind": "audioinput",
+      "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+      "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+    }
+    props: {
+      "stream": {
+        "__type": "MediaStream",
+        "id": "867880c8-399a-4e4f-a93c-865e563f584a",
+        "active": true
+      },
+      "audioInput": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      "videoInput": {
+        "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+        "kind": "videoinput",
+        "label": "HD Pro Webcam C920 (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      },
+      "main": {
+        "devices": [
+          {
+            "deviceId": "default",
+            "kind": "audioinput",
+            "label": "Default - Microphone (Realtek(R) Audio)",
+            "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+          },
+          {
+            "deviceId": "communications",
+            "kind": "audioinput",
+            "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+            "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+          },
+          {
+            "deviceId": "0462fd431b04f9b5eeb4517768664a9ced4f7c2dd6e80893b11b3d3a3dece13f",
+            "kind": "audioinput",
+            "label": "Microphone (Realtek(R) Audio)",
+            "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+          },
+          {
+            "deviceId": "8ea96a15589ef5e27718fdddceffb595d12ca111dfb2da00b4686429cdfdf328",
+            "kind": "audioinput",
+            "label": "Microphone (HD Pro Webcam C920) (046d:082d)",
+            "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+          },
+          {
+            "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+            "kind": "videoinput",
+            "label": "HD Pro Webcam C920 (046d:082d)",
+            "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+          },
+          {
+            "deviceId": "fb506093e76995f4acbf5846dda4949f5aba2fecbd45ebebdf6ecff16b55210a",
+            "kind": "videoinput",
+            "label": "Integrated Webcam (0c45:671d)",
+            "groupId": "637cff707de92fa7fdd4a7522911698f292c917e5bd9c56ba00b41cb3a041a0b"
+          },
+          {
+            "deviceId": "default",
+            "kind": "audiooutput",
+            "label": "Default - Speakers/Headphones (Realtek(R) Audio)",
+            "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+          },
+          {
+            "deviceId": "communications",
+            "kind": "audiooutput",
+            "label": "Communications - Speakers/Headphones (Realtek(R) Audio)",
+            "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+          },
+          {
+            "deviceId": "801dc1d87eba184bf6c596a5ba8571846e450f37f527aa7938ece0aa95efa2be",
+            "kind": "audiooutput",
+            "label": "Speakers/Headphones (Realtek(R) Audio)",
+            "groupId": "2fbfd9a06fa9b7e57bf5eb100ff8b983f1249b566ed7bfa2e43fc3358d94119f"
+          }
+        ],
+        "stream": {
+          "__type": "MediaStream",
+          "id": "ipQX0k902GUlmGS2DHXHhxQMsQ4B9gtcDSFK",
+          "active": true
+        },
+        "inputs": {
+          "audioInput": {
+            "deviceId": "communications",
+            "kind": "audioinput",
+            "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+            "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+          },
+          "videoInput": {
+            "deviceId": "bac251049a55dabee3e7bb1caf2eef59b081f5a42da64a5fb311e954f8b1625a",
+            "kind": "videoinput",
+            "label": "HD Pro Webcam C920 (046d:082d)",
+            "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+          }
+        }
+      },
+      "updatingAudioInput": false,
+      "updatingVideoInput": false,
+      "originalMainAudioInput": {
+        "deviceId": "communications",
+        "kind": "audioinput",
+        "label": "Communications - Microphone (HD Pro Webcam C920) (046d:082d)",
+        "groupId": "60ace559fc57b49094c7669c065277c6b8fa24f504f48856f4715e9758c78a48"
+      }
+    }
+[2021-05-20 11:40:25.565 +0000] DEBUG (aquila): [PreviewStreamController] Update stream
+    oldStream: {
+      "__type": "MediaStream",
+      "id": "867880c8-399a-4e4f-a93c-865e563f584a",
+      "active": true
+    }
+[2021-05-20 11:40:25.567 +0000] DEBUG (media-processor): AudioGraph[release]
+    props: {
+      "closing": false,
+      "nodes": [
+        {},
+      ],
+      "inits": [
+        {
+          "type": "source",
+          "node": {},
+          "nodeIndex": 0,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "analyzer",
+          "node": {
+            "node": {},
+            "frequencyBinCount": 32,
+            "fftSize": 64,
+            "minDecibels": -100,
+            "maxDecibels": -30,
+            "smoothingTimeConstant": 0.8,
+            "getByteTimeDomainData": "[Function bound getByteTimeDomainData]",
+            "getByteFrequencyData": "[Function bound getByteFrequencyData]",
+            "getFloatFrequencyData": "[Function bound getFloatFrequencyData]",
+            "getFloatTimeDomainData": "[Function l]",
+            "getAverageVolume": "[Function getAverageVolume]",
+            "disconnect": "[Function bound disconnect]"
+          },
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        }
+      ]
+    }
+[2021-05-20 11:40:25.568 +0000] DEBUG (media-processor): Release AudioNode
+    target: {
+      "type": "source",
+      "node": {},
+      "nodeIndex": 0,
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:40:25.568 +0000] DEBUG (media-processor): Release AudioNode
+    target: {
+      "type": "analyzer",
+      "node": {
+        "node": {},
+        "frequencyBinCount": 32,
+        "fftSize": 64,
+        "minDecibels": -100,
+        "maxDecibels": -30,
+        "smoothingTimeConstant": 0.8,
+        "getByteTimeDomainData": "[Function bound getByteTimeDomainData]",
+        "getByteFrequencyData": "[Function bound getByteFrequencyData]",
+        "getFloatFrequencyData": "[Function bound getFloatFrequencyData]",
+        "getFloatTimeDomainData": "[Function l]",
+        "getAverageVolume": "[Function getAverageVolume]",
+        "disconnect": "[Function bound disconnect]"
+      },
+      "nodeIndex": 1,
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 11:40:25.570 +0000] DEBUG (media-processor): AudioContext has changed state
+    audioContextState: {}
+    state: "closed"
+[2021-05-20 11:40:34.755 +0000] INFO (media-processor): Set mute on GainNode
+    mute: false
+    shouldMute: true
+    gain: 1
+    state: "running"
+    at: 147.392
+[2021-05-20 11:40:34.755 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "audio": false,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "video": true,
+      "type": "updateCall",
+      "id": "e8653b81-3c50-4313-a2ff-0a31dbf46b01"
+    }
+[2021-05-20 11:40:35.175 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": true,
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-20T11:40:34.481Z",
+      "audio": false,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "id": "fb0d0467-fbef-45dc-9bde-a00892bb9dde",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": true
+    }
+[2021-05-20 11:40:39.684 +0000] INFO (media-processor): Set mute on GainNode
+    mute: true
+    shouldMute: false
+    gain: 0
+    state: "running"
+    at: 152.32
+[2021-05-20 11:40:39.684 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "audio": true,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "video": true,
+      "type": "updateCall",
+      "id": "ab63b417-bc3c-4a0a-97b7-d8cbbe88d84b"
+    }
+[2021-05-20 11:40:39.753 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:40:39.440Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:40:40.094 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": true,
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-20T11:40:39.409Z",
+      "audio": true,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "id": "a51e92a2-cfa1-4e1e-b5f7-ce2ad6bff718",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": true
+    }
+[2021-05-20 11:40:42.764 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:40:42.447Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:41:12.820 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:41:12.499Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:41:17.827 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:41:17.510Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:41:41.876 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:41:41.559Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:41:53.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:41:53.584Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:41:55.903 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:41:55.590Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:42:35.990 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:42:35.675Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:43:29.089 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:43:28.773Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:43:35.101 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:43:34.785Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:44:27.199 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:44:26.881Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:44:29.199 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:44:28.886Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:44:36.219 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:44:35.899Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:44:51.249 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:44:50.930Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:45:32.326 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:45:32.010Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:45:41.355 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:45:41.029Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:46:37.451 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:46:37.135Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:47:25.552 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:47:25.234Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:48:45.688 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:48:45.372Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:49:05.742 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:49:05.412Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:50:14.858 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:50:14.542Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:50:20.869 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:50:20.553Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:51:07.947 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:51:07.633Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:51:13.959 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:51:13.644Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:51:40.009 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:51:39.690Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:51:48.022 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:51:47.707Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:52:20.085 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:52:19.770Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:52:39.125 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:52:38.807Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:52:57.161 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:52:56.846Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:53:26.219 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:53:25.902Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:53:48.261 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:53:47.946Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:54:15.314 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:54:14.998Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:54:38.358 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:54:38.041Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:54:46.372 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:54:46.057Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:54:57.395 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:54:57.079Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:55:06.416 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:55:06.100Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:55:12.428 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:55:12.114Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:55:32.467 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:55:32.150Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:55:37.477 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:55:37.161Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:56:07.544 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:56:07.228Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:56:15.560 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:56:15.245Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:56:34.600 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:56:34.284Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:56:46.624 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:56:46.308Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:56:57.650 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:56:57.333Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:57:26.708 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:57:26.387Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:57:29.709 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:57:29.397Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:58:05.784 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:58:05.470Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:58:30.832 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:58:30.516Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:58:48.862 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:58:48.546Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:58:55.877 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:58:55.562Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:59:19.915 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:59:19.598Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 11:59:57.974 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T11:59:57.659Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:00.978 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:00.667Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:07.999 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:07.683Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:10.000 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:09.688Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:17.020 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:16.703Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:33.996 +0000] DEBUG (service-auth): getToken, check if not expired first
+    exp: 1621513383
+[2021-05-20 12:00:33.996 +0000] DEBUG (service-auth): Handle refresh token.
+[2021-05-20 12:00:33.996 +0000] DEBUG (service-auth): trying to refresh access token
+[2021-05-20 12:00:34.296 +0000] DEBUG (service-auth): Token refreshed. Cleanup refreshPromise.
+[2021-05-20 12:00:34.296 +0000] DEBUG (service-auth): getToken, return token
+    exp: 1621514733
+[2021-05-20 12:00:34.297 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "displayName": "juliet@pexip.com",
+      "deviceName": "Web App",
+      "type": "session",
+      "id": "8f6a7d4d-b734-4270-af42-a5b3a0e7cfbc",
+      "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE1MTQ3MzMsInV1aWQiOiIyNzliMGNiYi02ZWIxLTQzZGUtOTA0MC1hYzBhNTY2M2Q3NDIiLCJ1c2VyIjoiczoyNzliMGNiYi02ZWIxLTQzZGUtOTA0MC1hYzBhNTY2M2Q3NDIifQ.QAhTr2NV9SIcA015qqgrDE_dFLD7b4mO_3rj0-wwGvFe-yiLm7AwmxXjeC34GUq8PZho_IO6vst76iKjs3O4vIKGoNId7oP9zPXLbpHLll3b6CbbDAFmTpHiTDpcQqu_GJKam9TnQTdYoiFJcnwUyw372JbapRAoULfB0yAJURU6PQjPNe1tcWbrhiTEBbY-FrKnpjHpST-NVzFMuWrBO-ScBrn1kTnRokcwFbIU_5TcHh4hQyIAHRUL_Vc7UoKfCf0RaYZb45sVAvL6PFfT4PLKe6BjePzgX6MFvAqjicbwSM7y2uHsQuyXRGozpMryGnu6KXT8_SmgUKdt5dFg1A"
+    }
+[2021-05-20 12:00:35.049 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:34.737Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:56.094 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:55.777Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:00:58.094 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:00:57.783Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:01:01.104 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:01:00.792Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:01:17.138 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:01:16.823Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:01:50.192 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:01:49.879Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:01:57.208 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:01:56.893Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:02:28.256 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:02:27.942Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:02:33.275 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:02:32.954Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:02:50.307 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:02:49.992Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:02:51.307 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:02:50.996Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:03:12.358 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:03:12.033Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:03:36.395 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:03:36.078Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:04:08.511 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:04:08.196Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:05:09.619 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:05:09.305Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:05:18.639 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:05:18.324Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:05:27.653 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:05:27.341Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 1,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:05:30.661 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "actor": "",
+      "actorName": "",
+      "at": "2021-05-20T12:05:30.350Z",
+      "id": "",
+      "identity": "",
+      "identitySession": "",
+      "layout": "5:7",
+      "position": 0,
+      "ref": "",
+      "session": "",
+      "size": "big",
+      "topic": "",
+      "type": "stage"
+    }
+[2021-05-20 12:05:32.284 +0000] DEBUG (aquila): Disconnect signal received
+[2021-05-20 12:05:32.289 +0000] DEBUG (aquila): MeetingFlow.page cleanup
+[2021-05-20 12:05:32.289 +0000] DEBUG (aquila): Cleanup media stream
+    module: "media"
+    mediaStream: {
+      "__type": "MediaStream",
+      "id": "ipQX0k902GUlmGS2DHXHhxQMsQ4B9gtcDSFK",
+      "active": true
+    }
+[2021-05-20 12:05:32.290 +0000] DEBUG (media-processor): AudioGraph[release]
+    props: {
+      "closing": false,
+      "nodes": [
+        {},
+        {},
+        {},
+      ],
+      "inits": [
+        {
+          "type": "source",
+          "node": {},
+          "nodeIndex": 0,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "worklet",
+          "node": {},
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "gain",
+          "node": {
+            "node": {},
+            "mute": false,
+            "disconnect": "[Function bound disconnect]"
+          },
+          "nodeIndex": 1,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        },
+        {
+          "type": "destination",
+          "node": {},
+          "nodeIndex": 2,
+          "create": "[Function ]",
+          "release": "[Function ]"
+        }
+      ]
+    }
+[2021-05-20 12:05:32.290 +0000] DEBUG (media-processor): Release AudioNode
+    target: {
+      "type": "source",
+      "node": {},
+      "nodeIndex": 0,
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 12:05:32.291 +0000] DEBUG (media-processor): Release AudioNode
+    target: {
+      "type": "worklet",
+      "node": {},
+      "nodeIndex": 1,
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 12:05:32.291 +0000] DEBUG (media-processor): Unsubscribe to AudioWorklet
+    node: {}
+[2021-05-20 12:05:32.291 +0000] DEBUG (media-processor): Release AudioNode
+    target: {
+      "type": "gain",
+      "node": {
+        "node": {},
+        "mute": false,
+        "disconnect": "[Function bound disconnect]"
+      },
+      "nodeIndex": 1,
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 12:05:32.291 +0000] DEBUG (media-processor): Release AudioNode
+    target: {
+      "type": "destination",
+      "node": {},
+      "nodeIndex": 2,
+      "create": "[Function create]",
+      "release": "[Function release]"
+    }
+[2021-05-20 12:05:32.293 +0000] DEBUG (aquila): End call cleanup
+[2021-05-20 12:05:32.294 +0000] INFO (peer-connection): call close
+    module: "PresoPeerConnection:send"
+    references: {
+      "module": "PresoPeerConnection:send",
+      "createdAt": "2021-05-20T11:38:09.345Z",
+      "presentationDirection": "send"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    offerOptions: {
+      "offerToReceiveAudio": false,
+      "offerToReceiveVideo": false
+    }
+[2021-05-20 12:05:32.296 +0000] INFO (peer-connection): call close
+    module: "PresoPeerConnection:receive"
+    references: {
+      "module": "PresoPeerConnection:receive",
+      "createdAt": "2021-05-20T11:38:09.343Z",
+      "presentationDirection": "receive"
+    }
+    connectionState: "new"
+    iceConnectionState: "new"
+    iceGatheringState: "new"
+    signalingState: "stable"
+    offerOptions: {
+      "offerToReceiveAudio": false,
+      "offerToReceiveVideo": true
+    }
+[2021-05-20 12:05:32.297 +0000] INFO (peer-connection): call close
+    module: "MainPeerConnection"
+    references: {
+      "module": "MainPeerConnection",
+      "createdAt": "2021-05-20T11:38:09.338Z",
+      "callRef": "304c138d-b040-43d6-98da-675d4e802a99",
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e"
+    }
+    connectionState: "connected"
+    iceConnectionState: "connected"
+    iceGatheringState: "complete"
+    signalingState: "stable"
+[2021-05-20 12:05:32.321 +0000] INFO (aquila): Stop Presentation stream
+[2021-05-20 12:05:32.324 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "hang",
+      "id": "ba6674ef-bc43-4072-a69c-a30aa9ed4830"
+    }
+[2021-05-20 12:05:32.324 +0000] WARN (signal): Emitting media:stream:local without any observer! This may be a mistake.
+    signal: "media:stream:local"
+[2021-05-20 12:05:32.330 +0000] DEBUG (media-processor): AudioContext has changed state
+    audioContextState: {}
+    state: "closed"
+[2021-05-20 12:05:33.871 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": false,
+      "actor": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "actorName": "Juliet Durdle",
+      "at": "2021-05-20T12:05:32.055Z",
+      "audio": false,
+      "callId": "018e915a-8902-4f6d-99bb-a01174a2b00e",
+      "id": "d6c20588-dedb-4f38-9dbc-79ee28d8e87b",
+      "identity": "s:279b0cbb-6eb1-43de-9040-ac0a5663d742",
+      "identitySession": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "5a699c22-eda2-48d5-b993-1390d2d72428",
+      "session": "d9c1c782-25fc-45d5-9da9-25d936cc3778",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": false
+    }
+[2021-05-20 12:05:34.519 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": false,
+      "actor": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "actorName": "Sam Phillips",
+      "at": "2021-05-20T12:05:34.149Z",
+      "audio": false,
+      "callId": "7af3e146-a2cf-4bb8-84a9-6e4d9afb80a9",
+      "id": "313c17af-0fe8-420f-bdcd-8316a755856e",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "06cdca6c-ad12-4bfd-9a83-c721e91fdf4c",
+      "session": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": false
+    }
+[2021-05-20 12:06:13.184 +0000] DEBUG (lighthouse): lighthouse message received
+    event: {
+      "active": false,
+      "actor": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "actorName": "Sam Phillips",
+      "at": "2021-05-20T12:06:11.293Z",
+      "audio": false,
+      "callId": "7af3e146-a2cf-4bb8-84a9-6e4d9afb80a9",
+      "id": "f8981540-332a-4d74-9eed-269540e49800",
+      "identity": "g:95adeec9-c42f-4e2a-93f6-054d604d7939",
+      "identitySession": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "mediaNode": "",
+      "participantUuid": "",
+      "presentation": false,
+      "ref": "06cdca6c-ad12-4bfd-9a83-c721e91fdf4c",
+      "session": "812122b9-da10-4804-8b2f-83980fe567e1",
+      "topic": "74241828-c783-4ab7-81da-d6e84ffdc79e",
+      "type": "media",
+      "video": false
+    }
+[2021-05-20 12:23:03.804 +0000] DEBUG (service-auth): getToken, check if not expired first
+    exp: 1621514733
+[2021-05-20 12:23:03.804 +0000] DEBUG (service-auth): Handle refresh token.
+[2021-05-20 12:23:03.804 +0000] DEBUG (service-auth): trying to refresh access token
+[2021-05-20 12:23:04.115 +0000] DEBUG (service-auth): Token refreshed. Cleanup refreshPromise.
+[2021-05-20 12:23:04.115 +0000] DEBUG (service-auth): getToken, return token
+    exp: 1621516083
+[2021-05-20 12:23:04.115 +0000] DEBUG (lighthouse): lighthouse message sent
+    payload: {
+      "displayName": "juliet@pexip.com",
+      "deviceName": "Web App",
+      "type": "session",
+      "id": "d9b7192b-5ac9-4706-90ac-73f900fc9733",
+      "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE1MTYwODMsInV1aWQiOiIyNzliMGNiYi02ZWIxLTQzZGUtOTA0MC1hYzBhNTY2M2Q3NDIiLCJ1c2VyIjoiczoyNzliMGNiYi02ZWIxLTQzZGUtOTA0MC1hYzBhNTY2M2Q3NDIifQ.pMFGcc8bmRhTd00t88EUemaKB5oecqpmmeD_VENFLG28JsZbkKxGsIWI8U8Svc1hQAZBH6zDc0cfHUMz4cGGqGOnjx6CFu3nELGt300ZTDo22a6cP3CYzN1QSnVstQ3PYsOlchv4KbQ1y9-zQ10Tuo-8AU4rJO5U7_6cev7xNw-uz7h6zdQ1IGqwp40KZXr2pjn4j5kL4pfYA8PINu70juv_w5MduYwRUhBlO56-k1JC1D-kmLilgadz7V4NgKeUsuqMiAtrE_qHqBPAMf6S2AXY6HXil0U64JnrGPGWdGb2xLpd3LUboE_nYvsedPiaYHRxZ2163qRP-vEdRrgLyw"
+    }
