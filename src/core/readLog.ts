@@ -5,8 +5,7 @@ import type { LogEntry } from "../types";
 
 export const readLog = (logFile?: string): Promise<LogEntry[]> => {
   if (!logFile) {
-    logFile =
-      "/Users/shimiz/Documents/projects/log-reader/src/test/logs/pexip-2021-05-25T06-23-49.542Z.log";
+    logFile = "src/test/logs/pexip-2021-05-28T11-40-31.486Z.log";
   }
 
   return new Promise((resolve, reject) => {
