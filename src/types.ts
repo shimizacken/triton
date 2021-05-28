@@ -27,3 +27,13 @@ export interface LogEntry extends LogEntryCore {
 export interface State {
   path: string;
 }
+
+export type AppNames =
+  | "aquila"
+  | "media"
+  | "service-auth"
+  | "lighthouse"
+  | "router"
+  | "signal"
+  | "media-control"
+  | "media-processor";
