@@ -45,6 +45,10 @@ export const initTerminal = (state: State) => {
             `${ANSIFontStyling.FgYellow}${ANSIFontStyling.Underscore}Log summary:${ANSIFontStyling.Reset}\n`
           );
 
+          if (!topicId) {
+            // TODO: fetch meeting URL
+          }
+
           console.log(`${ANSIFontStyling.FgCyan} topic: ${topicId}\n`);
 
           const names = topicLogs
