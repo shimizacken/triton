@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import { state } from "../state/state.js";
-import { initTerminal } from "../vendors/terminal.js";
+import { initRenderer } from "../vendors/renderer.js";
 import type { LogEntry } from "../types";
 
 export const readLog = (logFile?: string): Promise<LogEntry[]> => {
@@ -24,7 +24,7 @@ export const readLog = (logFile?: string): Promise<LogEntry[]> => {
 };
 
 export const main = () => {
-  initTerminal(state);
+  initRenderer(console.log)(state);
 };
 
 main();

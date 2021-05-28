@@ -1,7 +1,7 @@
 import * as readline from "readline";
 import { readLog } from "../core/readLog.js";
 import { ANSIFontStyling } from "../enums.js";
-import { State } from "../types.js";
+import { Log, State } from "../types.js";
 import { toTime } from "../utils/utils.js";
 
 const consoleReader = readline.createInterface({
@@ -9,14 +9,14 @@ const consoleReader = readline.createInterface({
   output: process.stdout,
 });
 
-export const initTerminal = (state: State) => {
-  console.log(
+export const initRenderer = (log: Log) => (state: State) => {
+  log(
     `${ANSIFontStyling.BgMagenta}\n Welcome to ]pexip[ log parser ${ANSIFontStyling.Reset}\n`
   );
 
   consoleReader.question(` Path to log file? `, (input) => {
     state.path = input;
-    console.log("");
+    log("");
 
     consoleReader.question(
       ` Filter by (can combine with '|')? 'show all' (enter) | 'mute' | 'media' | 'token': `,
@@ -28,7 +28,7 @@ export const initTerminal = (state: State) => {
         results.then((result) => {
           const mediaEvents = {};
 
-          const topicId = result?.find((log) => log?.payload?.type === "member")
+          const topicId = result?.find((obj) => obj?.payload?.type === "member")
             ?.payload?.topic;
 
           const topicLogs = result
@@ -41,7 +41,7 @@ export const initTerminal = (state: State) => {
             })
             .filter(Boolean);
 
-          console.log(
+          log(
             `${ANSIFontStyling.FgYellow}${ANSIFontStyling.Underscore}Log summary:${ANSIFontStyling.Reset}\n`
           );
 
@@ -49,7 +49,7 @@ export const initTerminal = (state: State) => {
             // TODO: fetch meeting URL
           }
 
-          console.log(`${ANSIFontStyling.FgCyan} topic: ${topicId}\n`);
+          log(`${ANSIFontStyling.FgCyan} topic: ${topicId}\n`);
 
           const names = topicLogs
             .map((obj) => {
@@ -59,13 +59,13 @@ export const initTerminal = (state: State) => {
             })
             .filter(Boolean);
 
-          console.log(
+          log(
             ANSIFontStyling.FgYellow,
             `${ANSIFontStyling.Underscore}Logs from:${ANSIFontStyling.Reset}`
           );
 
           new Set(names).forEach((name) =>
-            console.log(`${ANSIFontStyling.FgCyan} ${name}`)
+            log(`${ANSIFontStyling.FgCyan} ${name}`)
           );
 
           const lighthouseEvents = topicLogs
@@ -76,121 +76,101 @@ export const initTerminal = (state: State) => {
             })
             .filter(Boolean);
 
-          console.log(ANSIFontStyling.Reset);
+          log(ANSIFontStyling.Reset);
 
-          console.log(
+          log(
             ANSIFontStyling.FgYellow,
             `${ANSIFontStyling.Underscore}lighthouse events:${ANSIFontStyling.Reset}`
           );
 
-          console.log(
+          log(
             ANSIFontStyling.FgCyan,
             Array.from(new Set(lighthouseEvents)).join(", ")
           );
 
-          console.log(ANSIFontStyling.Reset);
+          log(ANSIFontStyling.Reset);
 
-          console.log(
+          log(
             ANSIFontStyling.FgYellow,
             `${ANSIFontStyling.Underscore}Log:${ANSIFontStyling.Reset}\n`
           );
 
-          topicLogs.forEach((log) => {
-            console.log(
-              ANSIFontStyling.FgGreen,
-              `${log.time} | ${toTime(log.time)}`
-            );
-            console.log(ANSIFontStyling.FgCyan, `name: ${log.name}`);
+          topicLogs.forEach((obj) => {
+            log(ANSIFontStyling.FgGreen, `${obj.time} | ${toTime(obj.time)}`);
+            log(ANSIFontStyling.FgCyan, `name: ${obj.name}`);
 
-            log.msg
-              ? console.log(ANSIFontStyling.FgYellow, `message: ${log.msg}`)
+            obj.msg ? log(ANSIFontStyling.FgYellow, `message: ${obj.msg}`) : "";
+
+            obj.isTrusted
+              ? log(ANSIFontStyling.Reset, `isTrusted: ${obj.isTrusted}`)
               : "";
 
-            log.isTrusted
-              ? console.log(
-                  ANSIFontStyling.Reset,
-                  `isTrusted: ${log.isTrusted}`
-                )
-              : "";
-
-            if (log.name === "router") {
-              console.log(
+            if (obj.name === "router") {
+              log(
                 "\x1b[0m",
-                `title: ${log.url?.state?.title}, url: ${log.url?.path}`
+                `title: ${obj.url?.state?.title}, url: ${obj.url?.path}`
               );
             }
 
-            if (log.name === "media-processor") {
-              log.mute !== undefined
-                ? console.log(ANSIFontStyling.FgCyan, `mute: ${log.mute}`)
+            if (obj.name === "media-processor") {
+              obj.mute !== undefined
+                ? log(ANSIFontStyling.FgCyan, `mute: ${obj.mute}`)
                 : "";
-              log.shouldMute !== undefined
-                ? console.log(
-                    ANSIFontStyling.FgCyan,
-                    `shouldMute: ${log.shouldMute}`
-                  )
+              obj.shouldMute !== undefined
+                ? log(ANSIFontStyling.FgCyan, `shouldMute: ${obj.shouldMute}`)
                 : "";
-              log.gain !== undefined
-                ? console.log(ANSIFontStyling.FgCyan, `gain: ${log.gain}`)
+              obj.gain !== undefined
+                ? log(ANSIFontStyling.FgCyan, `gain: ${obj.gain}`)
                 : "";
-              log.state
-                ? console.log(ANSIFontStyling.FgCyan, `state: ${log.state}`)
+              obj.state
+                ? log(ANSIFontStyling.FgCyan, `state: ${obj.state}`)
                 : "";
             }
 
-            if (log?.name === "lighthouse") {
+            if (obj?.name === "lighthouse") {
             }
 
             const sentMediaEvent =
-              log?.name === "lighthouse" && log.payload
-                ? log.payload
+              obj?.name === "lighthouse" && obj.payload
+                ? obj.payload
                 : undefined;
 
             if (sentMediaEvent) {
-              console.log(
-                ANSIFontStyling.FgYellow,
-                `type: ${sentMediaEvent.type}`
-              );
+              log(ANSIFontStyling.FgYellow, `type: ${sentMediaEvent.type}`);
               sentMediaEvent.at
-                ? console.log(
-                    ANSIFontStyling.FgGreen,
-                    `at: ${sentMediaEvent.at}`
-                  )
+                ? log(ANSIFontStyling.FgGreen, `at: ${sentMediaEvent.at}`)
                 : "";
-              console.log(
-                ANSIFontStyling.FgGreen,
-                `⬆ ${ANSIFontStyling.FgWhite}sent`
-              );
+              log(ANSIFontStyling.FgGreen, `⬆ ${ANSIFontStyling.FgWhite}sent`);
             }
 
             const receiveLighthouseEvent =
-              log?.name === "lighthouse" && log.event ? log.event : undefined;
+              obj?.name === "lighthouse" && obj.event ? obj.event : undefined;
 
             if (receiveLighthouseEvent) {
-              console.log(
+              log(
                 ANSIFontStyling.FgYellow,
                 `type: ${receiveLighthouseEvent.type}`
               );
-              console.log(
+              log(
                 ANSIFontStyling.FgRed,
                 `⬇ ${ANSIFontStyling.FgWhite}received`
               );
               receiveLighthouseEvent.at
-                ? console.log(
+                ? log(
                     ANSIFontStyling.FgGreen,
                     `at: ${receiveLighthouseEvent.at}`
                   )
                 : "";
 
               if (receiveLighthouseEvent?.type === "media") {
-                console.log(
+                log(
                   ANSIFontStyling.FgCyan,
                   `audio: ${receiveLighthouseEvent.audio}`
                 );
               }
 
               if (receiveLighthouseEvent?.type === "member") {
-                console.log(
+                log(
                   ANSIFontStyling.FgCyan,
                   `can: ${JSON.stringify(receiveLighthouseEvent.can)}`
                 );
@@ -206,7 +186,7 @@ export const initTerminal = (state: State) => {
                     mediaEvents[receiveLighthouseEvent.callId].at
                   ).valueOf()
                 ) {
-                  console.log(
+                  log(
                     ANSIFontStyling.FgRed,
                     `\t${ANSIFontStyling.Underscore}received out of order!${ANSIFontStyling.Reset} 🤪\n`,
                     `\t${ANSIFontStyling.FgWhite}previous media event at ${
@@ -226,7 +206,7 @@ export const initTerminal = (state: State) => {
               }
             }
 
-            console.log(ANSIFontStyling.Reset);
+            log(ANSIFontStyling.Reset);
           });
 
           consoleReader.question(`Exit (x) | Export (e): `, (input) => {
@@ -240,7 +220,7 @@ export const initTerminal = (state: State) => {
           });
 
           consoleReader.on("close", () => {
-            console.log("👋");
+            log("👋");
             process.exit(0);
           });
         });

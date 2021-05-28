@@ -39,3 +39,5 @@ export interface LogEntry extends LogEntryCore {
 export interface State {
   path: string;
 }
+
+export type Log = (message?: any, ...optionalParams: any[]) => void;
