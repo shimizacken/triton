@@ -4,6 +4,9 @@ export interface LogEntryCore {
   msg?: string;
   isTrusted?: boolean;
   mute?: boolean;
+  shouldMute?: boolean;
+  gain?: number;
+  state?: AudioContextState;
   url?: { path?: string; state: { title?: string } };
 }
 
