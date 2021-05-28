@@ -11,7 +11,7 @@ const consoleReader = readline.createInterface({
 
 export const initTerminal = (state: State) => {
   console.log(
-    `${ANSIFontStyling.BgMagenta}\n Welcome to ] pexip [ log parser ${ANSIFontStyling.Reset}\n`
+    `${ANSIFontStyling.BgMagenta}\n Welcome to ]pexip[ log parser ${ANSIFontStyling.Reset}\n`
   );
 
   consoleReader.question(` Path to log file? `, (input) => {
