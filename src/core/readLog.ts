@@ -23,8 +23,6 @@ export const readLog = (logFile?: string): Promise<LogEntry[]> => {
   });
 };
 
-export const main = () => {
+export const main = (() => {
   initRenderer(console.log)(state);
-};
-
-main();
+})();
