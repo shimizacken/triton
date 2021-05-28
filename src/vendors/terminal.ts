@@ -57,7 +57,7 @@ export const initTerminal = (state: State) => {
 
           console.log(
             ANSIFontStyling.FgYellow,
-            `${ANSIFontStyling.Underscore}Log names:${ANSIFontStyling.Reset}`
+            `${ANSIFontStyling.Underscore}Logs from:${ANSIFontStyling.Reset}`
           );
 
           new Set(names).forEach((name) =>
@@ -116,9 +116,23 @@ export const initTerminal = (state: State) => {
               );
             }
 
-            log.mute !== undefined
-              ? console.log(ANSIFontStyling.FgCyan, `mute: ${log.mute}`)
-              : "";
+            if (log.name === "media-processor") {
+              log.mute !== undefined
+                ? console.log(ANSIFontStyling.FgCyan, `mute: ${log.mute}`)
+                : "";
+              log.shouldMute !== undefined
+                ? console.log(
+                    ANSIFontStyling.FgCyan,
+                    `shouldMute: ${log.shouldMute}`
+                  )
+                : "";
+              log.gain !== undefined
+                ? console.log(ANSIFontStyling.FgCyan, `gain: ${log.gain}`)
+                : "";
+              log.state
+                ? console.log(ANSIFontStyling.FgCyan, `state: ${log.state}`)
+                : "";
+            }
 
             if (log?.name === "lighthouse") {
             }
