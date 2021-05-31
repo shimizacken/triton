@@ -167,6 +167,14 @@ export const initRenderer = (log: Log) => (state: State) => {
                   ANSIFontStyling.FgCyan,
                   `audio: ${receiveLighthouseEvent.audio}`
                 );
+                log(
+                  ANSIFontStyling.FgCyan,
+                  `actor: ${receiveLighthouseEvent.actor}`
+                );
+                log(
+                  ANSIFontStyling.FgCyan,
+                  `identity: ${receiveLighthouseEvent.identity}`
+                );
               }
 
               if (receiveLighthouseEvent?.type === "member") {
@@ -195,6 +203,24 @@ export const initRenderer = (log: Log) => (state: State) => {
                       ANSIFontStyling.FgWhite
                     }and the next at ${ANSIFontStyling.FgGreen}${
                       receiveLighthouseEvent?.at
+                    }`
+                  );
+                  log(
+                    ANSIFontStyling.FgCyan,
+                    `\taudio: ${
+                      mediaEvents[receiveLighthouseEvent.callId]?.audio
+                    }`
+                  );
+                  log(
+                    ANSIFontStyling.FgCyan,
+                    `\tactor: ${
+                      mediaEvents[receiveLighthouseEvent.callId]?.actor
+                    }`
+                  );
+                  log(
+                    ANSIFontStyling.FgCyan,
+                    `\tidentity: ${
+                      mediaEvents[receiveLighthouseEvent.callId]?.identity
                     }`
                   );
                 }

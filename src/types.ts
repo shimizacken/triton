@@ -31,12 +31,23 @@ export interface lighthouseEvent {
   callId: string;
   can?: string;
   audio?: boolean;
+  actor?: string;
+  identity?: string;
 }
 
 export interface LogEntry extends LogEntryCore {
   payload?: lighthouseEvent;
   event?: lighthouseEvent;
 }
+
+export type LogItem = {
+  time: number;
+  type: "lighthouse-event" | "info";
+  appName: AppName;
+  eventType?: LighthouseEventType;
+  message: string;
+  labels: string[];
+};
 
 export interface State {
   path: string;
