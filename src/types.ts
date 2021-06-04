@@ -49,8 +49,11 @@ export type LogItem = {
   labels: string[];
 };
 
+export type Preset = "show all (enter)" | "mute" | "media" | "token";
+
 export interface State {
   path: string;
+  preset: Preset;
 }
 
 export type Log = (message?: any, ...optionalParams: any[]) => void;
