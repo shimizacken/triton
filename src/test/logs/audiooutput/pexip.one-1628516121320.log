@@ -1,0 +1,30 @@
+14:34:26.465 browser.js:198 Object NetworkInformation "User connection"
+14:34:26.494 browser.js:198 Object Object "Jasså? Døkk sit og glor"
+14:34:26.510 VM9:27 [Report Only] This document requires 'TrustedScript' assignment.
+injectIntoContentWindow @ VM9:27
+14:34:26.510 VM9:27 [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self' 'unsafe-inline'".
+
+injectIntoContentWindow @ VM9:27
+14:34:26.524 VM9:27 [Report Only] This document requires 'TrustedScript' assignment.
+injectIntoContentWindow @ VM9:27
+14:34:26.524 VM9:27 [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self' 'unsafe-inline'".
+
+injectIntoContentWindow @ VM9:27
+14:34:26.573 browser.js:198 Object Object "Emitting media/aquila:onDevicesChanged without any observer! This may be a mistake."
+t.<computed> @ browser.js:198
+14:34:26.576 browser.js:198 Object "Connecting to lighthouse using identity: s:7951084c-771d-4fa6-b411-02b64addefc9"
+14:34:26.576 browser.js:198 Object "establishing websocket"
+14:34:26.585 load script:24 [Report Only] This document requires 'TrustedScriptURL' assignment.
+i.l @ load script:24
+14:34:26.637 browser.js:198 Object Object "Emitting router:urlChanged without any observer! This may be a mistake."
+t.<computed> @ browser.js:198
+14:34:26.712 browser.js:198 Object Event
+14:34:26.712 browser.js:198 Object Object "Emitting lighthouse:socket:open without any observer! This may be a mistake."
+t.<computed> @ browser.js:198
+14:34:26.793 browser.js:198 Object Object "Identity session"
+14:34:27.054 browser.js:198 Object Object "handleUrlRequest"
+14:34:27.406 browser.js:198 Object Object "request user media success!"
+14:34:27.767 browser.js:198 Object "media.muteAudio(false) invoked"
+14:34:27.767 browser.js:198 Object "audioMuted inputSignal emitted" Object
+14:34:27.768 browser.js:198 Object "media.muteVideo(false) invoked"
+14:34:27.768 browser.js:198 Object "videoMuted inputSignal emitted" Object
