@@ -1,9 +1,9 @@
 import * as fs from "fs";
 import { state } from "../state/state.js";
 import { initRenderer } from "../vendors/renderer.js";
-import type { LogEntry } from "../types";
+import type { LogEntryCore } from "../types";
 
-export const readLog = (logFile?: string): Promise<LogEntry[]> => {
+export const readLog = (logFile?: string): Promise<LogEntryCore[]> => {
   if (!logFile) {
     logFile = "src/test/logs/pexip-2021-05-28T11-40-31.486Z.log";
   }

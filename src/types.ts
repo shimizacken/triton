@@ -1,3 +1,5 @@
+export type LighthouseEventType = "media" | "member" | "stage" | "updateCall";
+
 export type AppName =
   | "aquila"
   | "lighthouse"
@@ -6,23 +8,12 @@ export type AppName =
   | "media"
   | "router"
   | "service-auth"
-  | "signal";
-
-export type LighthouseEventType = "media" | "member" | "stage" | "updateCall";
+  | "signal"
+  | "media-control"
+  | "media-processor"
+  | "peer-connection";
 
 export type Filter = "mute" | "token";
-
-export interface LogEntryCore {
-  name: AppName;
-  time: number;
-  msg?: string;
-  isTrusted?: boolean;
-  mute?: boolean;
-  shouldMute?: boolean;
-  gain?: number;
-  state?: AudioContextState;
-  url?: { path?: string; state: { title?: string } };
-}
 
 export interface lighthouseEvent {
   topic: string;
@@ -35,9 +26,16 @@ export interface lighthouseEvent {
   identity?: string;
 }
 
-export interface LogEntry extends LogEntryCore {
-  payload?: lighthouseEvent;
-  event?: lighthouseEvent;
+export interface LogEntryCore extends lighthouseEvent {
+  name: AppName;
+  time: number;
+  msg?: string;
+  isTrusted?: boolean;
+  mute?: boolean;
+  shouldMute?: boolean;
+  gain?: number;
+  state?: AudioContextState;
+  url?: { path?: string; state: { title?: string } };
 }
 
 export type LogItem = {

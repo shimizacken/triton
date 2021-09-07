@@ -31,12 +31,12 @@ export const initRenderer =
             const mediaEvents = {};
 
             const topicId = result?.find(
-              (obj) => obj?.payload?.type === "member"
-            )?.payload?.topic;
+              (obj) => obj?.type === "member"
+            )?.topic;
 
             const topicLogs = result
               .filter((message) => {
-                if (message.event?.topic && message.event?.topic !== topicId) {
+                if (message?.topic && message?.topic !== topicId) {
                   return undefined;
                 }
 
@@ -73,8 +73,8 @@ export const initRenderer =
 
             const lighthouseEvents = topicLogs
               .map((obj) => {
-                if (obj.event?.type) {
-                  return obj.event.type;
+                if (obj?.type) {
+                  return obj.type;
                 }
               })
               .filter(Boolean);
@@ -136,9 +136,7 @@ export const initRenderer =
               }
 
               const sentMediaEvent =
-                obj?.name === "lighthouse" && obj.payload
-                  ? obj.payload
-                  : undefined;
+                obj?.name === "lighthouse" ? obj : undefined;
 
               if (sentMediaEvent) {
                 log(ANSIFontStyling.FgYellow, `type: ${sentMediaEvent.type}`);
@@ -152,7 +150,7 @@ export const initRenderer =
               }
 
               const receiveLighthouseEvent =
-                obj?.name === "lighthouse" && obj.event ? obj.event : undefined;
+                obj?.name === "lighthouse" ? obj : undefined;
 
               if (receiveLighthouseEvent) {
                 log(
