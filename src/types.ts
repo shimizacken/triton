@@ -11,7 +11,8 @@ export type AppName =
   | "signal"
   | "media-control"
   | "media-processor"
-  | "peer-connection";
+  | "peer-connection"
+  | "service-auth";
 
 export type Filter = "mute" | "token";
 
