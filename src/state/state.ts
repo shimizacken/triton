@@ -1,6 +1,6 @@
-import { State } from "../types";
+import { LoggerState } from "../types";
 
-export const state: State = {
+export const state: LoggerState = {
   path: "",
   preset: "show all (enter)",
 };

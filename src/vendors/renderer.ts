@@ -1,7 +1,7 @@
 import * as readline from "readline";
 import { readLog } from "../core/readLog.js";
 import { ANSIFontStyling } from "../enums.js";
-import { Log, State } from "../types.js";
+import { Log, LoggerState } from "../types.js";
 import { toTime } from "../utils/utils.js";
 
 const consoleReader = readline.createInterface({
@@ -11,7 +11,7 @@ const consoleReader = readline.createInterface({
 
 export const initRenderer =
   (log: Log) =>
-  (state = { preset: "show all (enter)" } as State) => {
+  (state = { preset: "show all (enter)" } as LoggerState) => {
     log(
       `${ANSIFontStyling.BgMagenta}\n Welcome to ]pexip[ log parser ${ANSIFontStyling.Reset}\n`
     );

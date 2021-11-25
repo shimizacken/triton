@@ -50,7 +50,7 @@ export type LogItem = {
 
 export type Preset = "show all (enter)" | "mute" | "media" | "token";
 
-export interface State {
+export interface LoggerState {
   path: string;
   preset: Preset;
 }
